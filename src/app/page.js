@@ -1,3 +1,4 @@
+import AboutAMECourse from "@/components/Home/AboutAMECourse";
 import AboutUs from "@/components/Home/AboutUs";
 import ApplySection from "@/components/Home/ApplySection";
 import CampusGallery from "@/components/Home/CampusGallery";
@@ -16,6 +17,7 @@ export default function Home() {
       <MissionVision/>
       <CourseSection/>
       <CampusGallery/>
+      <AboutAMECourse/>
       <ApplySection/>
       <WhyChooseSection/>
     </div>

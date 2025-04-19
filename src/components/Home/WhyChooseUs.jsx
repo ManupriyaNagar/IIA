@@ -19,31 +19,60 @@ const features = [
 ];
 
 const WhyChooseSection = () => {
-  return (
-    <section className="py-20 bg-white relative">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-        {/* Left Content */}
-        <div>
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
-            WHY CHOOSE IIA GURGAON?
-          </h2>
-          <ul className="space-y-4">
-            {features.map((point, idx) => (
-              <li key={idx} className="flex items-start text-gray-800 leading-relaxed">
-                <FaPlane className="text-blue-700 mt-1 mr-3 flex-shrink-0" />
-                <span>{point}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
+  const mid = Math.ceil(features.length / 2);
+  const leftFeatures = features.slice(0, mid);
+  const rightFeatures = features.slice(mid);
 
-        {/* Right Image */}
-        <div className="rounded-xl overflow-hidden shadow-lg">
-          <img
-            src="/next.png"
-            alt="Air hostess walking near aircraft"
-            className="w-full h-full object-cover"
-          />
+  return (
+    <section className="py-20 bg-gradient-to-r from-white via-blue-50 to-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-4xl font-extrabold text-center text-blue-900 mb-12">
+          WHY CHOOSE IIA GURGAON?
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+          {/* Left Features */}
+          <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col h-full">
+            <ul className="space-y-4 flex-1">
+              {leftFeatures.map((point, idx) => (
+                <li key={idx} className="flex items-start">
+                  <div className="flex-shrink-0 bg-blue-100 text-blue-600 p-2 rounded-full mr-4 mt-1">
+                    <FaPlane />
+                  </div>
+                  <p className="text-gray-800 text-sm leading-relaxed">
+                    {point}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Center Image */}
+          <div className="flex justify-center">
+            <div className="rounded-2xl overflow-hidden shadow-lg w-full max-w-sm h-full">
+              <img
+                src="/b.png"
+                alt="Air hostess walking near aircraft"
+                className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+              />
+            </div>
+          </div>
+
+          {/* Right Features */}
+          <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col h-full">
+            <ul className="space-y-4 flex-1">
+              {rightFeatures.map((point, idx) => (
+                <li key={idx} className="flex items-start">
+                  <div className="flex-shrink-0 bg-blue-100 text-blue-600 p-2 rounded-full mr-4 mt-1">
+                    <FaPlane />
+                  </div>
+                  <p className="text-gray-800 text-sm leading-relaxed">
+                    {point}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>

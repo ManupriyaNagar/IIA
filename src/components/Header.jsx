@@ -35,7 +35,7 @@ export default function Header() {
 
           <li><a href="#" className="hover:text-yellow-400 transition">Academics</a></li>
           <li><a href="#" className="hover:text-yellow-400 transition">Approvals</a></li>
-          <li><a href="#" className="hover:text-yellow-400 transition">Mou & Tieups</a></li>
+          <li><a href="#" className="hover:text-yellow-400 transition">Admission</a></li>
 
           {/* Courses Dropdown */}
           <li className="relative group">

@@ -27,7 +27,7 @@ const MissionVision = () => {
       {/* Center image */}
       <div className="flex-1 max-w-xs mx-auto relative">
         <Image
-          src="/next.png"
+          src="/earth-flight.png"
           alt="Globe with airplane"
           width={400}
           height={400}

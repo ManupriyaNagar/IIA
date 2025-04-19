@@ -5,6 +5,7 @@ import CampusGallery from "@/components/Home/CampusGallery";
 import CourseSection from "@/components/Home/CourseSection";
 import Hero from "@/components/Home/Hero";
 import MissionVision from "@/components/Home/MissionVission";
+import ProgramsSection from "@/components/Home/ProgramSection";
 import WhyChooseSection from "@/components/Home/WhyChooseUs";
 
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero/>
       <AboutUs/>
       <MissionVision/>
+      <ProgramsSection/>
       <CourseSection/>
       <CampusGallery/>
       <AboutAMECourse/>

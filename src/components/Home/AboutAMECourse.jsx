@@ -6,6 +6,13 @@ const AboutAMECourse = () => {
   return (
     <section className="bg-white py-20 relative">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-start">
+      <div className="rounded-xl overflow-hidden shadow-lg">
+          <img
+            src="/ame.png"
+            alt="AME course technician working"
+            className="w-full h-200 object-cover"
+          />
+        </div>
         {/* Left Content */}
         <div>
           <h2 className="text-white bg-blue-900 px-6 py-2 rounded-md inline-block font-bold text-lg mb-6">
@@ -30,13 +37,7 @@ const AboutAMECourse = () => {
         </div>
 
         {/* Right Image */}
-        <div className="rounded-xl overflow-hidden shadow-lg">
-          <img
-            src="/next.png"
-            alt="AME course technician working"
-            className="w-full h-full object-cover"
-          />
-        </div>
+       
       </div>
     </section>
   );

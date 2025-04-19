@@ -32,10 +32,16 @@ export default function TopBar() {
         </div>
 
         {/* Center: Logo */}
-        <div className="flex items-center space-x-2 justify-center">
-          <img src="/5.png" alt="IIA Logo" className="h-12 object-contain" />
-          <span className="text-xl md:text-2xl font-bold text-indigo-900">IIA Gurgaon</span>
-        </div>
+        <div className="flex items-center">
+  <img
+    src="/5.png"
+    alt="IIA Logo"
+    className="h-12"
+  />
+  <span className="text-xl md:text-2xl font-bold text-indigo-900">
+    IIA Gurgaon
+  </span>
+</div>
 
         {/* Right: Search Bar */}
         <div className="w-full md:w-60 flex items-center border border-gray-300 px-2 py-1 rounded-md">

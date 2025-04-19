@@ -4,7 +4,7 @@ import React from "react";
 
 const ApplySection = () => {
   return (
-    <div className="py-20 bg-gradient-to-r from-green-50 to-teal-50">
+    <div className="py-20 bg-gradient-to-r from-indigo-50 to-teal-50">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid md:grid-cols-2 gap-12 items-stretch">
         {/* Image */}
@@ -14,7 +14,7 @@ const ApplySection = () => {
             alt="Aircraft Maintenance"
             className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
           />
-          <div className="absolute bottom-4 left-4 bg-green-800 bg-opacity-80 text-white text-xl font-semibold px-4 py-2 rounded shadow-lg">
+          <div className="absolute bottom-4 left-4 bg-indigo-800 bg-opacity-80 text-white text-xl font-semibold px-4 py-2 rounded shadow-lg">
             Indraprasth Institute of Aeronautics
           </div>
         </div>
@@ -22,7 +22,7 @@ const ApplySection = () => {
         {/* Text */}
         <div className="bg-white p-8 rounded-2xl shadow-xl border border-green-100 h-full flex flex-col justify-between">
           <div>
-            <h2 className="text-4xl font-extrabold text-green-800 mb-6">
+            <h2 className="text-4xl font-extrabold text-indigo-800 mb-6">
               How to Become an AME?
             </h2>
             <div className="space-y-5 text-gray-700 leading-relaxed">
@@ -38,7 +38,7 @@ const ApplySection = () => {
             </div>
           </div>
           <div className="mt-8">
-            <button className="bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-full font-semibold shadow-md hover:shadow-xl transition-all duration-300">
+            <button className="bg-indigo-700 hover:bg-indigo-800 text-white px-8 py-3 rounded-full font-semibold shadow-md hover:shadow-xl transition-all duration-300">
               Apply Now
             </button>
           </div>

@@ -97,10 +97,8 @@ const AboutUs = () => {
               className="space-y-4 mb-8"
             >
               {[
-                "Indraprasth Institute of Aeronautics (IIA)",
-                "Indraprasth Engineering College (IEC)",
-                "Indraprasth Pharmacy Academy (IPA)",
-                "Indraprasth Business School (IBS)"
+                `
+               Indraprastha Institute of Aeronautics (IIA) is a premier aviation training institute, approved by the Directorate General of Civil Aviation (DGCA). With cutting-edge facilities, IIA offers comprehensive training programs in Aircraft Maintenance Engineering (AME) designed to equip students with hands-on experience using real, licensed aircraft. Our focus is on producing industry-ready professionals with a 99% placement record. Through practical labs, expert faculty, and a commitment to excellence, IIA shapes the future of aviation careers, ensuring every graduate is fully prepared to meet the demands of the rapidly evolving aviation sector.`
               ].map((item, idx) => (
                 <motion.li
                   key={idx}

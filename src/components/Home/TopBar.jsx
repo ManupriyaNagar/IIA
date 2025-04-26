@@ -52,14 +52,15 @@ export default function TopBar() {
         </div>
 
         {/* Right: Search Bar */}
-        <div className="w-full sm:w-auto flex items-center border border-gray-300 px-3 py-2 rounded-md">
-          <Search className="w-4 h-4 text-gray-500 mr-2" />
-          <input
-            type="text"
-            placeholder="Search..."
-            className="w-full outline-none text-sm text-gray-700 placeholder-gray-400 bg-transparent"
-          />
-        </div>
+        <div className="w-full sm:w-auto flex items-center border-b border-gray-300 px-3 py-2">
+  <Search className="w-4 h-4 text-gray-500 mr-2" />
+  <input
+    type="text"
+    placeholder="Search..."
+    className="w-full outline-none text-sm text-gray-700 placeholder-gray-400 bg-transparent"
+  />
+</div>
+
 
       </div>
     </div>

@@ -4,22 +4,23 @@ import React from "react";
 
 const CampusGallery = () => {
   const images = [
-    "/c1.png",
-    "/c8.png",
-    "/c5.png",
-    "/c6.png",
-    "/c4.png",
-    "/c3.png",
-    "/c2.png",
-    "/c7.png",
-    "/c9.png",
-    "/c10.png",
-    "/c11.png",
-    "/c12.png",
-    "/c13.png",
-    "/c14.png",
-    "/c17.png",
-    "/c16.png",
+    "/68.jpeg",
+    "/79.jpeg",
+    "/81.jpeg",
+    "/84.jpeg",
+   
+    "/93.jpeg",
+    "/94.jpeg",
+    "/85.jpeg",
+    "/100.jpeg",
+    "/111.jpeg",
+    "/B1-4.png",
+      "/63.jpeg",
+        "/78.jpeg",
+          "/66.jpeg",
+    "/96.jpeg", 
+     "/94.jpeg",
+     "/93.jpeg",
   ];
 
   return (

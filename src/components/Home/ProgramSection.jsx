@@ -2,11 +2,11 @@ import React from "react";
 
 // Programs data with icons and titles
 const programs = [
-  { code: "A1", icon: "/A1.png", title: "Airframe Mastery" },
-  { code: "A4", icon: "/A4.png", title: "Engine Excellence" },
-  { code: "B1.1", icon: "/B1-1.png", title: "Mechinical Stream" },
-  { code: "B1.4", icon: "/B1-4.png", title: "Structural Champs" },
-  { code: "B2", icon: "/B2.png", title: "Avionics Innovators" },
+  { code: "A1", icon: "/A1.png" },
+  { code: "A4", icon: "/A4.png" },
+  { code: "B1.1", icon: "/B1-1.png" },
+  { code: "B1.4", icon: "/B1-4.png" },
+  { code: "B2", icon: "/B2.png"},
 ];
 
 const ProgramsSection = () => {
@@ -49,11 +49,9 @@ const ProgramsSection = () => {
               {/* Content */}
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
-                    {title}
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    Code: <span className="font-medium text-gray-800">{code}</span>
+                 
+                  <p className="text-3xl text-gray-600 text-center">
+                     <span className="font-medium text-gray-800">{code}</span>
                   </p>
                 </div>
                 <div className="mt-6">
@@ -66,7 +64,7 @@ const ProgramsSection = () => {
 
         {/* Second row: two cards centered */}
         <div className="mt-16 flex flex-wrap justify-center gap-12">
-          {secondRow.map(({ code, icon, title }) => (
+          {secondRow.map(({ code, icon }) => (
             <div
               key={code}
               className="relative w-72 bg-white rounded-2xl border border-gray-200 shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:rotate-1 hover:shadow-2xl group"
@@ -76,7 +74,7 @@ const ProgramsSection = () => {
 
               {/* Icon */}
               <div className="flex justify-center mt-10">
-                <div className="bg-gradient-to-br from-indigo-100 to-indigo-200 p-4 rounded-full animate-pulse">
+                <div className="bg-gradient-to-br from-indigo-100 to-indigo-200 p-4 rounded-full animate-pulse text-center">
                   <img src={icon} alt={code} className="w-32 h-32 object-contain" />
                 </div>
               </div>
@@ -84,11 +82,9 @@ const ProgramsSection = () => {
               {/* Content */}
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
-                    {title}
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    Code: <span className="font-medium text-gray-800">{code}</span>
+                  
+                  <p className="text-3xl text-gray-600 text-center">
+                    <span className="font-medium text-gray-800">{code}</span>
                   </p>
                 </div>
                 <div className="mt-6">

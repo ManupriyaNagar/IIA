@@ -155,23 +155,13 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="bg-black text-white py-4 px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-center text-xs">
-        <div>
-          <div className="text-2xl mb-1">📘</div>
-          <h3 className="font-semibold">Best Education</h3>
-          <p>Venenatis netus sagittis...</p>
-        </div>
-        <div>
-          <div className="text-2xl mb-1">🎓</div>
-          <h3 className="font-semibold">Top Instructors</h3>
-          <p>Venenatis netus sagittis...</p>
-        </div>
-        <div>
-          <div className="text-2xl mb-1">💻</div>
-          <h3 className="font-semibold">Online Education</h3>
-          <p>Venenatis netus sagittis...</p>
-        </div>
-      </div>
+      <div className="bg-yellow-600 py-8">
+  <marquee behavior="scroll" direction="left" scrollamount="8" className="text-white font-semibold text-2xl">
+    Admission Open 2025! Indraprasth Institute of Aeronautics AME course ( ) Joining letter issue will be shortly. 
+    Please visit the website regularly for the latest updates. Information regarding admission will be shared on your email address and mobile number.
+  </marquee>
+</div>
+
     </section>
   );
 }

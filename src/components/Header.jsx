@@ -34,7 +34,7 @@ export default function Header() {
           {/* IIA Dropdown */}
           <li className="relative group">
             <a href="#" className="hover:text-yellow-400 transition">IIA</a>
-            <ul className="md:absolute md:top-full left-0 hidden group-hover:md:block bg-gray-800 mt-2 rounded shadow-lg min-w-[200px] z-50">
+            <ul className="md:absolute md:top-full left-0 hidden group-hover:md:block bg-gray-800 rounded shadow-lg min-w-[200px] z-50">
               <li><a href="#" className="block px-4 py-2 hover:bg-gray-700 rounded">About IIA</a></li>
               <li><a href="#" className="block px-4 py-2 hover:bg-gray-700 rounded">Managing Director Message</a></li>
             </ul>
@@ -47,7 +47,7 @@ export default function Header() {
           {/* Courses Dropdown */}
           <li className="relative group">
             <a href="#" className="hover:text-yellow-400 transition">Our Courses</a>
-            <ul className="md:absolute md:top-full left-0 hidden group-hover:md:block bg-gray-800 mt-2 rounded shadow-lg min-w-[200px] z-50">
+            <ul className="md:absolute md:top-full left-0 hidden group-hover:md:block bg-gray-800 rounded shadow-lg min-w-[200px] z-50">
               <li><a href="#" className="block px-4 py-2 hover:bg-gray-700 rounded">AME Course</a></li>
               <li><a href="#" className="block px-4 py-2 hover:bg-gray-700 rounded">Fee Structure</a></li>
             </ul>
@@ -56,7 +56,7 @@ export default function Header() {
           {/* Campus Life Dropdown */}
           <li className="relative group">
             <a href="#" className="hover:text-yellow-400 transition">Campus Life</a>
-            <ul className="md:absolute md:top-full left-0 hidden group-hover:md:block bg-gray-800 mt-2 rounded shadow-lg min-w-[220px] z-50">
+            <ul className="md:absolute md:top-full left-0 hidden group-hover:md:block bg-gray-800 rounded shadow-lg min-w-[220px] z-50">
               <li><a href="#" className="block px-4 py-2 hover:bg-gray-700 rounded">Admission</a></li>
               <li><a href="#" className="block px-4 py-2 hover:bg-gray-700 rounded">Eligibility</a></li>
               <li><a href="#" className="block px-4 py-2 hover:bg-gray-700 rounded">Why Choose IIAG</a></li>

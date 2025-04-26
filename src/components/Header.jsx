@@ -74,14 +74,13 @@ export default function Header() {
           <li>
           <a
   href="/enquirynow"
-  className="relative inline-block bg-yellow-500 text-gray-900 font-bold px-4 py-2 rounded-full overflow-visible transition-all duration-300 hover:bg-yellow-600"
+  className="relative inline-block bg-yellow-500 text-gray-900 font-bold px-4 py-2 rounded-full overflow-hidden transition-all duration-300 hover:bg-yellow-600"
 >
-  {/* animated border */}
-  <span className="absolute inset-0 border-2 border-yellow-400 rounded-full animate-ping"></span>
-  {/* button content */}
+  <span className="absolute inset-0 rounded-full border-2 border-yellow-400 opacity-50 animate-slow-ping"></span>
   <span className="relative">Direct Admission</span>
 </a>
 
+          
 
           </li>
         </ul>

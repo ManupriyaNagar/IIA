@@ -17,12 +17,19 @@ export default function Header() {
         </div>
 
         {/* Nav Links */}
-        <ul
-          className={`${
-            menuOpen ? 'block' : 'hidden'
-          } md:flex flex-col md:flex-row md:items-center md:space-x-6 space-y-2 md:space-y-0 mt-4 md:mt-0 text-sm lg:text-base font-medium whitespace-nowrap z-50`}
-        >
-          <li><a href="#" className="hover:text-yellow-400 transition">Home</a></li>
+          <ul
+    className={`${
+      menuOpen ? 'block' : 'hidden'
+    } md:flex w-full md:justify-evenly   /* ← full width + evenly spaced */
+       flex-col md:flex-row 
+       md:items-center 
+       md:space-x-6 space-y-2 md:space-y-0 
+       mt-4 md:mt-0 
+       text-sm lg:text-base 
+       font-medium whitespace-nowrap 
+       z-50`}
+  >
+          <li><a href="/" className="hover:text-yellow-400 transition">Home</a></li>
 
           {/* IIA Dropdown */}
           <li className="relative group">
@@ -65,12 +72,17 @@ export default function Header() {
           <li><a href="#" className="hover:text-yellow-400 transition">Testimonials</a></li>
           <li><a href="#" className="hover:text-yellow-400 transition">Contact Us</a></li>
           <li>
-            <a
-              href="#"
-              className="bg-yellow-500 text-gray-900 px-4 py-2 rounded hover:bg-yellow-600 transition"
-            >
-              Enquiry Now
-            </a>
+          <a
+  href="/enquirynow"
+  className="relative inline-block bg-yellow-500 text-gray-900 font-bold px-4 py-2 rounded-full overflow-visible transition-all duration-300 hover:bg-yellow-600"
+>
+  {/* animated border */}
+  <span className="absolute inset-0 border-2 border-yellow-400 rounded-full animate-ping"></span>
+  {/* button content */}
+  <span className="relative">Direct Admission</span>
+</a>
+
+
           </li>
         </ul>
       </nav>

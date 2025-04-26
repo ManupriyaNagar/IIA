@@ -3,8 +3,8 @@ import React from "react";
 // Programs data with icons and titles
 const programs = [
   { code: "A1", icon: "/A1.png", title: "Airframe Mastery" },
-  { code: "A2", icon: "/A4.png", title: "Engine Excellence" },
-  { code: "B1.1", icon: "/B1-1.png", title: "Electrical Wizards" },
+  { code: "A4", icon: "/A4.png", title: "Engine Excellence" },
+  { code: "B1.1", icon: "/B1-1.png", title: "Mechinical Stream" },
   { code: "B1.4", icon: "/B1-4.png", title: "Structural Champs" },
   { code: "B2", icon: "/B2.png", title: "Avionics Innovators" },
 ];

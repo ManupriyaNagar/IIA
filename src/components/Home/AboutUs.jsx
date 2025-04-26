@@ -56,9 +56,12 @@ const AboutUs = () => {
               />
             </span>
           </h2>
+          <div>
           <h3 className="inline-block text-3xl font-semibold text-white bg-black/40 px-3 py-1 rounded-md">
             Indraprasth Group Of Institutions
           </h3>
+          </div>
+         
         </motion.div>
 
         <motion.div

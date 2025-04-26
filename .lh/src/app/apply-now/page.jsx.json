@@ -1,0 +1,42 @@
+{
+    "sourceFile": "src/app/apply-now/page.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1745480087217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1745480319939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,121 @@\n-import React from 'react'\n+// pages/apply.js\n+import { useState } from 'react';\n \n-const page = () => {\n+export default function ApplyNowForm() {\n+  const [formData, setFormData] = useState({\n+    fullName: '',\n+    email: '',\n\\ No newline at end of file\n+    phone: '',\n+    dob: '',\n+    course: '',\n+    qualification: '',\n+    message: '',\n+  });\n+\n+  const handleChange = (e) => {\n+    const { name, value } = e.target;\n+    setFormData((prev) => ({ ...prev, [name]: value }));\n+  };\n+\n+  const handleSubmit = (e) => {\n+    e.preventDefault();\n+    console.log('Application submitted:', formData);\n+    alert(\"Your application has been submitted!\");\n+    setFormData({\n+      fullName: '',\n+      email: '',\n+      phone: '',\n+      dob: '',\n+      course: '',\n+      qualification: '',\n+      message: '',\n+    });\n+  };\n+\n   return (\n-    <div>page</div>\n-  )\n+    <div className=\"max-w-xl mx-auto p-8 bg-white shadow-xl rounded-lg mt-10\">\n+      <h1 className=\"text-3xl font-bold text-center mb-6 text-blue-700\">Apply Now</h1>\n+      <form onSubmit={handleSubmit} className=\"space-y-5\">\n+        <div>\n+          <label className=\"block font-medium mb-1\">Full Name</label>\n+          <input\n+            name=\"fullName\"\n+            type=\"text\"\n+            value={formData.fullName}\n+            onChange={handleChange}\n+            required\n+            className=\"w-full border border-gray-300 px-4 py-2 rounded\"\n+          />\n+        </div>\n+        <div>\n+          <label className=\"block font-medium mb-1\">Email</label>\n+          <input\n+            name=\"email\"\n+            type=\"email\"\n+            value={formData.email}\n+            onChange={handleChange}\n+            required\n+            className=\"w-full border border-gray-300 px-4 py-2 rounded\"\n+          />\n+        </div>\n+        <div>\n+          <label className=\"block font-medium mb-1\">Phone</label>\n+          <input\n+            name=\"phone\"\n+            type=\"tel\"\n+            value={formData.phone}\n+            onChange={handleChange}\n+            required\n+            className=\"w-full border border-gray-300 px-4 py-2 rounded\"\n+          />\n+        </div>\n+        <div>\n+          <label className=\"block font-medium mb-1\">Date of Birth</label>\n+          <input\n+            name=\"dob\"\n+            type=\"date\"\n+            value={formData.dob}\n+            onChange={handleChange}\n+            className=\"w-full border border-gray-300 px-4 py-2 rounded\"\n+          />\n+        </div>\n+        <div>\n+          <label className=\"block font-medium mb-1\">Course Applied For</label>\n+          <input\n+            name=\"course\"\n+            type=\"text\"\n+            value={formData.course}\n+            onChange={handleChange}\n+            className=\"w-full border border-gray-300 px-4 py-2 rounded\"\n+          />\n+        </div>\n+        <div>\n+          <label className=\"block font-medium mb-1\">Highest Qualification</label>\n+          <input\n+            name=\"qualification\"\n+            type=\"text\"\n+            value={formData.qualification}\n+            onChange={handleChange}\n+            className=\"w-full border border-gray-300 px-4 py-2 rounded\"\n+          />\n+        </div>\n+        <div>\n+          <label className=\"block font-medium mb-1\">Message</label>\n+          <textarea\n+            name=\"message\"\n+            rows=\"4\"\n+            value={formData.message}\n+            onChange={handleChange}\n+            className=\"w-full border border-gray-300 px-4 py-2 rounded\"\n+          />\n+        </div>\n+        <button\n+          type=\"submit\"\n+          className=\"w-full bg-blue-600 text-white font-semibold py-2 rounded-full hover:bg-blue-700 transition\"\n+        >\n+          Apply Now\n+        </button>\n+      </form>\n+    </div>\n+  );\n }\n-\n-export default page\n"
+                },
+                {
+                    "date": 1745480333411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n // pages/apply.js\n+\n+\"use client\"\n import { useState } from 'react';\n \n export default function ApplyNowForm() {\n   const [formData, setFormData] = useState({\n@@ -117,5 +119,5 @@\n         </button>\n       </form>\n     </div>\n   );\n-}\n\\ No newline at end of file\n+}\n"
+                },
+                {
+                    "date": 1745480372574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,9 @@\n     });\n   };\n \n   return (\n+    <section className='bg-white'>\n     <div className=\"max-w-xl mx-auto p-8 bg-white shadow-xl rounded-lg mt-10\">\n       <h1 className=\"text-3xl font-bold text-center mb-6 text-blue-700\">Apply Now</h1>\n       <form onSubmit={handleSubmit} className=\"space-y-5\">\n         <div>\n@@ -118,6 +119,7 @@\n           Apply Now\n         </button>\n       </form>\n     </div>\n+    </section>\n   );\n }\n"
+                },
+                {
+                    "date": 1745480378963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     });\n   };\n \n   return (\n-    <section className='bg-white'>\n+    <section className='bg-white py-20'>\n     <div className=\"max-w-xl mx-auto p-8 bg-white shadow-xl rounded-lg mt-10\">\n       <h1 className=\"text-3xl font-bold text-center mb-6 text-blue-700\">Apply Now</h1>\n       <form onSubmit={handleSubmit} className=\"space-y-5\">\n         <div>\n"
+                },
+                {
+                    "date": 1745480387981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n   };\n \n   return (\n     <section className='bg-white py-20'>\n-    <div className=\"max-w-xl mx-auto p-8 bg-white shadow-xl rounded-lg mt-10\">\n+    <div className=\"max-w-xl mx-auto p-8 bg-white shadow-xl rounded-lg mt-10 text-black \">\n       <h1 className=\"text-3xl font-bold text-center mb-6 text-blue-700\">Apply Now</h1>\n       <form onSubmit={handleSubmit} className=\"space-y-5\">\n         <div>\n           <label className=\"block font-medium mb-1\">Full Name</label>\n"
+                },
+                {
+                    "date": 1745480411153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     });\n   };\n \n   return (\n-    <section className='bg-white py-20'>\n+    <section className='bg-gray-300 py-20'>\n     <div className=\"max-w-xl mx-auto p-8 bg-white shadow-xl rounded-lg mt-10 text-black \">\n       <h1 className=\"text-3xl font-bold text-center mb-6 text-blue-700\">Apply Now</h1>\n       <form onSubmit={handleSubmit} className=\"space-y-5\">\n         <div>\n"
+                }
+            ],
+            "date": 1745480087217,
+            "name": "Commit-0",
+            "content": "import React from 'react'\n\nconst page = () => {\n  return (\n    <div>page</div>\n  )\n}\n\nexport default page"
+        }
+    ]
+}

@@ -14,7 +14,7 @@ export default function TopBar() {
             />
             <div>
               <div className="font-semibold">Support & Helpdesk</div>
-              <div className="text-xs">18003090503 / 09212170022/33</div>
+              <div className="text-xs">18003090503 / +91-9212170033</div>
             </div>
           </div>
 

@@ -3,6 +3,7 @@ import AboutUs from "@/components/Home/AboutUs";
 import AcademyInfo from "@/components/Home/AcademyInfo";
 import ApplySection from "@/components/Home/ApplySection";
 import CampusGallery from "@/components/Home/CampusGallery";
+import Card from "@/components/Home/Card";
 import CourseSection from "@/components/Home/CourseSection";
 import Hero from "@/components/Home/Hero";
 import MissionVision from "@/components/Home/MissionVission";
@@ -18,6 +19,7 @@ export default function Home() {
       <AcademyInfo/>
       <AboutUs/>
       <MissionVision/>
+      {/* <Card/> */}
       <ProgramsSection/>
       <CourseSection/>
       <CampusGallery/>

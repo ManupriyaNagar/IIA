@@ -1,6 +1,9 @@
+'use client'
 import Image from 'next/image';
 import React from 'react';
 import { Quote } from 'lucide-react'; 
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
 
 const MissionVision = () => {
   return (
@@ -40,14 +43,14 @@ const MissionVision = () => {
         </div>
 
         {/* Center Image */}
-        <div className="flex-1 max-w-xs mx-auto relative">
-          <Image
-            src="/earth-flight.png"
-            alt="Globe with airplane"
-            width={400}
-            height={400}
-            className="mx-auto rounded-2xl shadow-2xl"
-          />
+        <div className="flex-1 max-w-3xl  relative">
+        <DotLottieReact
+      src="https://lottie.host/3e03e774-2395-4128-8ba3-e8a7fad3acbc/2azeNAW5Ah.lottie"
+      loop
+      autoplay
+    />
+
+
         </div>
 
         {/* Right Card */}

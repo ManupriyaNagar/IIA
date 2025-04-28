@@ -57,15 +57,18 @@ export default function Hero() {
   return (
     <section>
       <div className="relative w-full min-h-[39rem] bg-gradient-to-b from-black to-indigo-900 flex flex-col-reverse md:flex-row items-center justify-between px-4 md:px-8 py-8 overflow-hidden text-black">
-        <Image
-          src="/main.gif"
-          alt="Hero Banner"
-          fill
-          sizes="100vw"
-          style={{ objectFit: "cover" }}
-          className="opacity-30"
-          priority
-        />
+      <video
+  src="/w.mp4"  // Replace with the path to your video file
+  alt="Hero Banner"
+  className="opacity-30"
+  autoPlay
+  muted
+  loop
+  playsInline
+  style={{ objectFit: "cover", width: "100%", height: "100%", position: "absolute" }}
+  priority
+/>
+
 
         <div className="relative z-10 text-white max-w-lg text-center md:text-left mt-6 md:mt-0 ml-18">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold leading-snug drop-shadow" >

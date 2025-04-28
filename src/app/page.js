@@ -19,7 +19,7 @@ export default function Home() {
       <AcademyInfo/>
       <AboutUs/>
       <MissionVision/>
-      {/* <Card/> */}
+      <Card/>
       <ProgramsSection/>
       <CourseSection/>
       <CampusGallery/>

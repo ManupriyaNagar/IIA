@@ -1,6 +1,5 @@
 import React from "react";
 
-// Programs data with icons and titles
 const programs = [
   { code: "A1", icon: "/A1.png", title: "Maintenance Certifying Mechanic (Aeroplanes Turbine)" },
   { code: "A4", icon: "/A4.png", title: "Maintenance Certifying Mechanic (Helicopters Piston)" },
@@ -14,50 +13,56 @@ const ProgramsSection = () => {
   const secondRow = programs.slice(3);
 
   return (
-    <section className="relative py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
-      {/* Decorative blobs */}
-      <span className="absolute top-10 left-10 w-40 h-40 bg-indigo-100 rounded-full opacity-50 animate-pulse" />
-      <span className="absolute bottom-10 right-10 w-56 h-56 bg-indigo-100 rounded-full opacity-40 animate-ping" />
+    <section className="relative py-24 overflow-hidden">
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-30"
+        style={{ backgroundImage: "url('/38.jpeg')" }}
+      />
 
-      <div className="relative max-w-6xl mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl sm:text-6xl font-extrabold text-neutral-800 tracking-tight">
+      {/* Decorative blobs */}
+      <span className="absolute top-10 left-10 w-40 h-40 bg-gradient-to-r from-orange-300 to-pink-300 rounded-full opacity-40 animate-ping" />
+      <span className="absolute bottom-10 right-10 w-40 h-40 bg-gradient-to-r from-orange-300 to-pink-300 rounded-full opacity-40 animate-ping" />
+
+      <div className="relative max-w-7xl mx-auto px-6">
+        <div className="text-center mb-20">
+          <h2 className="text-5xl sm:text-6xl font-extrabold tracking-tight drop-shadow-md">
             Aircraft Maintenance Engineering
           </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-neutral-500 leading-relaxed">
+          <p className="mt-6 max-w-2xl mx-auto text-lg  leading-relaxed">
             Explore our specialized programs designed for excellence and innovation.
           </p>
         </div>
 
         {/* First row: three cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 justify-items-center bg-transparent">
           {firstRow.map(({ code, icon, title }) => (
             <div
               key={code}
-              className="relative w-72 bg-white rounded-2xl border border-gray-200 shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:-rotate-1 hover:shadow-2xl group"
+              className="relative w-72 bg-white/80 backdrop-blur-md rounded-3xl border border-gray-200 shadow-xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:rotate-1 hover:shadow-2xl group"
             >
               {/* Blob accents */}
-              <span className="absolute -top-5 -right-5 w-20 h-20 bg-indigo-100 rounded-full opacity-50 group-hover:bg-indigo-200 transition-colors" />
+              <span className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-r from-orange-300 to-pink-300 rounded-full opacity-30 group-hover:bg-pink-300 transition-all" />
 
               {/* Icon */}
               <div className="flex justify-center mt-10">
-                <div className="bg-gradient-to-br from-indigo-100 to-indigo-200 p-4 rounded-full animate-pulse">
-                  <img src={icon} alt={code} className="w-32 h-32 object-contain" />
+                <div className="bg-gradient-to-br from-orange-300 to-pink-300 p-4 rounded-full animate-pulse">
+                  <img src={icon} alt={code} className="w-28 h-28 object-contain rounded-full" />
                 </div>
               </div>
 
               {/* Content */}
-              <div className="p-6 flex-1 flex flex-col justify-between">
+              <div className="p-6 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                  <h3 className="text-xl font-bold bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent hover:text-blue transition-all duration-300">
                     {title}
                   </h3>
-                  <p className="text-sm text-gray-600">
-                    Code: <span className="font-medium text-gray-800">{code}</span>
+                  <p className="text-sm text-gray-700">
+                    Code: <span className="font-medium text-gray-900">{code}</span>
                   </p>
                 </div>
                 <div className="mt-6">
-                  <div className="h-1 bg-indigo-600 rounded-full w-16 mx-auto" />
+                  <div className="h-1 bg-gradient-to-r from-orange-500 to-pink-500 rounded-full w-16 mx-auto" />
                 </div>
               </div>
             </div>
@@ -65,34 +70,34 @@ const ProgramsSection = () => {
         </div>
 
         {/* Second row: two cards centered */}
-        <div className="mt-16 flex flex-wrap justify-center gap-12">
+        <div className="mt-20 flex flex-wrap justify-center gap-12">
           {secondRow.map(({ code, icon, title }) => (
             <div
               key={code}
-              className="relative w-72 bg-white rounded-2xl border border-gray-200 shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:rotate-1 hover:shadow-2xl group"
+              className="relative w-72 bg-white/80 backdrop-blur-md rounded-3xl border border-gray-200 shadow-xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:rotate-1 hover:shadow-2xl group"
             >
               {/* Blob accents */}
-              <span className="absolute -bottom-5 -left-5 w-24 h-24 bg-indigo-100 rounded-full opacity-40 group-hover:bg-indigo-200 transition-colors" />
+              <span className="absolute -bottom-6 -left-6 w-24 h-24 bg-gradient-to-r from-orange-300 to-pink-300 rounded-full opacity-30 group-hover:bg-pink-300 transition-all" />
 
               {/* Icon */}
               <div className="flex justify-center mt-10">
-                <div className="bg-gradient-to-br from-indigo-100 to-indigo-200 p-4 rounded-full animate-pulse">
-                  <img src={icon} alt={code} className="w-32 h-32 object-contain" />
+                <div className="bg-gradient-to-br from-orange-300 to-pink-300 p-4 rounded-full animate-pulse">
+                  <img src={icon} alt={code} className="w-28 h-28 object-contain rounded-full" />
                 </div>
               </div>
 
               {/* Content */}
-              <div className="p-6 flex-1 flex flex-col justify-between">
+              <div className="p-6 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                  <h3 className="text-xl font-bold bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent hover:text-blue transition-all duration-300">
                     {title}
                   </h3>
-                  <p className="text-sm text-gray-600">
-                    Code: <span className="font-medium text-gray-800">{code}</span>
+                  <p className="text-sm text-gray-700">
+                    Code: <span className="font-medium text-gray-900">{code}</span>
                   </p>
                 </div>
                 <div className="mt-6">
-                  <div className="h-1 bg-indigo-600 rounded-full w-16 mx-auto" />
+                  <div className="h-1 bg-gradient-to-r from-orange to-pink rounded-full w-16 mx-auto" />
                 </div>
               </div>
             </div>

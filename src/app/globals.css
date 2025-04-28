@@ -2,18 +2,31 @@
 
 @tailwind utilities;
 
+/* Base colors */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --pink: #EE4A62;   /* Pink color */
+  --blue: #303380;   /* Blue color */
+  --orange: #F1613F; /* Orange color */
+  --gray: #DEE4E2;   /* Gray color */
 }
 
+/* Tailwind theme inline */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-pink: var(--pink);
+  --color-blue: var(--blue);
+  --color-orange: var(--orange);
+  --color-gray: var(--gray);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
+/* Dark mode colors */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -21,14 +34,44 @@
   }
 }
 
+/* Body styles */
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Custom Utilities */
 @layer utilities {
   .animate-slow-ping {
     animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  /* Text color utilities */
+  .text-pink {
+    color: var(--pink);
+  }
+  .text-blue {
+    color: var(--blue);
+  }
+  .text-orange {
+    color: var(--orange);
+  }
+  .text-gray {
+    color: var(--gray);
+  }
+
+  /* Background color utilities */
+  .bg-pink {
+    background-color: var(--pink);
+  }
+  .bg-blue {
+    background-color: var(--blue);
+  }
+  .bg-orange {
+    background-color: var(--orange);
+  }
+  .bg-gray {
+    background-color: var(--gray);
   }
 }

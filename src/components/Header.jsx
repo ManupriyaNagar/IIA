@@ -6,8 +6,8 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-indigo-800 text-white shadow-md">
-      <nav className="bg-indigo-900 px-4 py-4 relative">
+    <header className="bg-blue text-white shadow-md">
+      <nav className="bg-blue px-4 py-4 relative">
         {/* Mobile Menu Toggle */}
         <div className="flex justify-between items-center md:hidden">
           <span className="text-lg font-semibold">IIA Gurgaon</span>
@@ -29,55 +29,55 @@ export default function Header() {
        font-medium whitespace-nowrap 
        z-50`}
   >
-          <li><a href="/" className="hover:text-yellow-400 transition">Home</a></li>
+          <li><a href="/" className="hover:text-orange transition">Home</a></li>
 
           {/* IIA Dropdown */}
           <li className="relative group">
-            <a href="#" className="hover:text-yellow-400 transition">IIA</a>
-            <ul className="md:absolute md:top-full left-0 hidden group-hover:md:block bg-gray-800 rounded shadow-lg min-w-[200px] z-50">
-              <li><a href="#" className="block px-4 py-2 hover:bg-gray-700 rounded">About IIA</a></li>
-              <li><a href="#" className="block px-4 py-2 hover:bg-gray-700 rounded">Managing Director Message</a></li>
+            <a href="#" className="hover:text-orange transition">IIA</a>
+            <ul className="md:absolute md:top-full left-0 hidden group-hover:md:block bg-gradient-to-r from-orange to-pink rounded shadow-lg min-w-[200px] z-50">
+              <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">About IIA</a></li>
+              <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">Managing Director Message</a></li>
             </ul>
           </li>
 
-          <li><a href="#" className="hover:text-yellow-400 transition">Academics</a></li>
-          <li><a href="#" className="hover:text-yellow-400 transition">Approvals</a></li>
-          <li><a href="#" className="hover:text-yellow-400 transition">Admission</a></li>
+          <li><a href="#" className="hover:text-orange transition">Academics</a></li>
+          <li><a href="#" className="hover:text-orange transition">AMEEE</a></li>
+          <li><a href="#" className="hover:text-orange transition">Admission</a></li>
 
           {/* Courses Dropdown */}
           <li className="relative group">
-            <a href="#" className="hover:text-yellow-400 transition">Our Courses</a>
-            <ul className="md:absolute md:top-full left-0 hidden group-hover:md:block bg-gray-800 rounded shadow-lg min-w-[200px] z-50">
-              <li><a href="#" className="block px-4 py-2 hover:bg-gray-700 rounded">AME Course</a></li>
-              <li><a href="#" className="block px-4 py-2 hover:bg-gray-700 rounded">Fee Structure</a></li>
+            <a href="#" className="hover:text-orange transition">Our Courses</a>
+            <ul className="md:absolute md:top-full left-0 hidden group-hover:md:block bg-gradient-to-r from-orange to-pink  rounded shadow-lg min-w-[200px] z-50">
+              <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">AME Course</a></li>
+              <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">Fee Structure</a></li>
             </ul>
           </li>
 
           {/* Campus Life Dropdown */}
           <li className="relative group">
-            <a href="#" className="hover:text-yellow-400 transition">Campus Life</a>
-            <ul className="md:absolute md:top-full left-0 hidden group-hover:md:block bg-gray-800 rounded shadow-lg min-w-[220px] z-50">
-              <li><a href="#" className="block px-4 py-2 hover:bg-gray-700 rounded">Admission</a></li>
-              <li><a href="#" className="block px-4 py-2 hover:bg-gray-700 rounded">Eligibility</a></li>
-              <li><a href="#" className="block px-4 py-2 hover:bg-gray-700 rounded">Why Choose IIAG</a></li>
-              <li><a href="#" className="block px-4 py-2 hover:bg-gray-700 rounded">Download Medical Certificate</a></li>
-              <li><a href="#" className="block px-4 py-2 hover:bg-gray-700 rounded">Offline Admission Form</a></li>
-              <li><a href="#" className="block px-4 py-2 hover:bg-gray-700 rounded">AMEEE</a></li>
-              <li><a href="#" className="block px-4 py-2 hover:bg-gray-700 rounded">Education Loan</a></li>
+            <a href="#" className="hover:text-orange transition">Campus Life</a>
+            <ul className="md:absolute md:top-full left-0 hidden group-hover:md:block bg-gradient-to-r from-orange to-pink rounded shadow-lg min-w-[220px] z-50">
+              <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">Admission</a></li>
+              <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">Eligibility</a></li>
+              <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">Why Choose IIAG</a></li>
+              <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">Download Medical Certificate</a></li>
+              <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">Offline Admission Form</a></li>
+              <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">AMEEE</a></li>
+              <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">Education Loan</a></li>
             </ul>
           </li>
 
-          <li><a href="#" className="hover:text-yellow-400 transition">Gallery</a></li>
-          <li><a href="#" className="hover:text-yellow-400 transition">Media</a></li>
-          <li><a href="#" className="hover:text-yellow-400 transition">Testimonials</a></li>
-          <li><a href="#" className="hover:text-yellow-400 transition">Contact Us</a></li>
+          <li><a href="#" className="hover:text-orange transition">Gallery</a></li>
+          <li><a href="#" className="hover:text-orange transition">Media</a></li>
+          <li><a href="#" className="hover:text-orange transition">Testimonials</a></li>
+          <li><a href="#" className="hover:text-orange transition">Contact Us</a></li>
           <li>
           <a
   href="/enquirynow"
-  className="relative inline-block bg-yellow-500 text-gray-900 font-bold px-4 py-2 rounded-full overflow-hidden transition-all duration-300 hover:bg-yellow-600"
+  className="relative inline-block bg-gradient-to-r from-orange to-pink hover:from-pink hover:to-orange text-gray-900 font-bold px-4 py-2 rounded-full overflow-hidden transition-all duration-300 hover:bg-yellow-600"
 >
   <span className="absolute inset-0 rounded-full border-2 border-yellow-400 opacity-50 animate-slow-ping"></span>
-  <span className="relative">Direct Admission</span>
+  <span className="relative text-white from-yellow-500 to-orange-500">Direct Admission</span>
 </a>
 
           

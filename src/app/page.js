@@ -1,5 +1,6 @@
 import AboutAMECourse from "@/components/Home/AboutAMECourse";
 import AboutUs from "@/components/Home/AboutUs";
+import AcademyInfo from "@/components/Home/AcademyInfo";
 import ApplySection from "@/components/Home/ApplySection";
 import CampusGallery from "@/components/Home/CampusGallery";
 import CourseSection from "@/components/Home/CourseSection";
@@ -14,6 +15,7 @@ export default function Home() {
   return (
     <div>
       <Hero/>
+      <AcademyInfo/>
       <AboutUs/>
       <MissionVision/>
       <ProgramsSection/>
@@ -21,6 +23,7 @@ export default function Home() {
       <CampusGallery/>
       <AboutAMECourse/>
       <ApplySection/>
+      
       <WhyChooseSection/>
     </div>
   );

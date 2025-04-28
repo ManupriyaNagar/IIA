@@ -3,43 +3,16 @@ import { Search } from 'lucide-react';
 export default function TopBar() {
   return (
     <div className="bg-white border-b border-gray-200 px-4 py-3">
-      <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-4">
-        
-        {/* Left: Contact Info */}
-        <div className="flex flex-col sm:flex-row items-center gap-4 text-sm text-gray-600">
-          <div className="flex items-center gap-2">
-            <img
-              src="https://demo.strongtheme.com/unione/wp-content/uploads/sites/3/2021/05/uniico047.png"
-              alt="Support"
-              className="h-8 w-8"
-            />
-            <div className="text-center sm:text-left">
-              <div className="font-semibold">Support & Helpdesk</div>
-              <div className="text-xs">18003090503 / +91-9212170033</div>
-            </div>
-          </div>
+      <div className="flex items-center justify-between gap-6 md:gap-4">
 
-          <div className="flex items-center gap-2">
-            <img
-              src="https://demo.strongtheme.com/unione/wp-content/uploads/sites/3/2021/05/uniico046.png"
-              alt="Email"
-              className="h-8 w-8"
-            />
-            <div className="text-center sm:text-left">
-              <div className="font-semibold">Email Center</div>
-              <div className="text-xs">admission@iiagurgaon.com</div>
-            </div>
-          </div>
-        </div>
-
-        {/* Center: Logo and Heading Side by Side */}
-        <div className="flex items-center gap-3 md:gap-4 text-center md:text-left">
+        {/* Left: Logo */}
+        <div className="flex items-center gap-3 md:gap-4">
           <img
-            src="/5.png"
+            src="/Logo.gif"
             alt="IIA Logo"
-            className="h-16 md:h-24 object-contain"
+            className="h-18 md:h-28 object-contain"
           />
-          <div className='text-center'>
+          <div className="text-center md:text-left">
             <h1 className="text-lg md:text-2xl font-extrabold text-indigo-900 uppercase leading-tight">
               Indraprasth Institute of Aeronautics
             </h1>
@@ -51,16 +24,44 @@ export default function TopBar() {
           </div>
         </div>
 
-        {/* Right: Search Bar */}
-        <div className="w-full sm:w-auto flex items-center border-b border-gray-300 px-3 py-2">
-  <Search className="w-4 h-4 text-gray-500 mr-2" />
-  <input
-    type="text"
-    placeholder="Search..."
-    className="w-full outline-none text-sm text-gray-700 placeholder-gray-400 bg-transparent"
-  />
-</div>
+        {/* Right: Contact Info in a single line */}
+        <div className="flex flex-col items-left text-sm text-gray-600 mr-10">
+          
+          {/* Support & Helpdesk */}
+          <a
+            href="https://wa.me/919212170033"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center"
+          >
+            <img
+              src="https://demo.strongtheme.com/unione/wp-content/uploads/sites/3/2021/05/uniico047.png"
+              alt="Support"
+              className="h-8 w-8"
+            />
+            <div className="text-left">
+              {/* <div className="font-semibold">Support & Helpdesk</div> */}
+              <div className="text-xs">18003090503 / +91-9212170033</div>
+            </div>
+          </a>
 
+          {/* Email Center */}
+          <a
+            href="mailto:admission@iiagurgaon.com"
+            className="flex items-center"
+          >
+            <img
+              src="https://demo.strongtheme.com/unione/wp-content/uploads/sites/3/2021/05/uniico046.png"
+              alt="Email"
+              className="h-8 w-8 "
+            />
+            <div className="text-left">
+              {/* <div className="font-semibold">Email Center</div> */}
+              <div className="text-xs">admission@iiagurgaon.com</div>
+            </div>
+          </a>
+
+        </div>
 
       </div>
     </div>

@@ -21,6 +21,8 @@ export default function RootLayout({ children }) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="/5.png" />
   <title>IIA GURGAON</title>
+  <script src="https://coolors.co/palette-widget/widget.js"></script>
+  <script data-id="008817269207344369">new CoolorsPaletteWidget("008817269207344369", ["F04861","F36F58","DEE4E2","303380","FFFFFF"]); </script>
 </head>
       <body
         className="">

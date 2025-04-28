@@ -1,52 +1,69 @@
 import Image from 'next/image';
 import React from 'react';
-import { Quote } from 'lucide-react'; // Optional, or use custom SVG
+import { Quote } from 'lucide-react'; 
 
 const MissionVision = () => {
   return (
-    <section className="bg-indigo-900 text-white py-16 px-6 md:px-12 rounded-2xl flex flex-col lg:flex-row items-center justify-between gap-12">
-      {/* Left side */}
-      <div className="flex-1 text-center lg:text-left max-w-md">
-        <div className="bg-yellow-400 text-[#1C2680] font-bold py-2 px-4 inline-block rounded mb-4">
-          Mission and Vision
-        </div>
-        <p className="text-base md:text-lg leading-relaxed mb-6">
-          Providing global employers and society with skilled manpower that is a fundamental
-          requirement for economic success and contribution to the community.
-        </p>
-        <div className="flex flex-col gap-4 items-center lg:items-start">
-          <button className="bg-yellow-400 text-[#1C2680] font-semibold py-2 px-6 rounded hover:brightness-90 transition">
-            Apply Now
-          </button>
-          <button className="bg-yellow-400 text-[#1C2680] font-semibold py-2 px-6 rounded hover:brightness-90 transition">
-            Student Placement Record
-          </button>
-        </div>
-      </div>
-
-      {/* Center image */}
-      <div className="flex-1 max-w-xs mx-auto relative">
+    <section className="relative text-white py-16 px-6 md:px-12 flex flex-col lg:flex-row items-center justify-between gap-12 overflow-hidden bg-indigo-900">
+      
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
         <Image
-          src="/earth-flight.png"
-          alt="Globe with airplane"
-          width={400}
-          height={400}
-          className="mx-auto rounded"
+          src="/banner.jpg" // Change this to your desired background image
+          alt="Background"
+          layout="fill"
+          objectFit="cover"
+          className="opacity-50"
         />
       </div>
 
-      {/* Right side */}
-      <div className="flex-1 text-center lg:text-left max-w-sm space-y-4">
-        <div className="flex justify-center lg:justify-start text-4xl text-white/30">
-          <Quote />
+      {/* Content Wrapper */}
+      <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12 w-full">
+
+        {/* Left Card */}
+        <div className="flex-1 backdrop-blur-md bg-white/10 p-8 rounded-2xl shadow-lg text-center lg:text-left max-w-md">
+          <div className="bg-gradient-to-r from-orange to-pink hover:from-pink hover:to-orange text-white font-bold py-2 px-4 inline-block rounded mb-6 text-sm md:text-base">
+            Mission and Vision
+          </div>
+          <p className="text-base md:text-lg leading-relaxed mb-8">
+            Providing global employers and society with skilled manpower that is a fundamental
+            requirement for economic success and contribution to the community.
+          </p>
+          <div className="flex flex-col gap-4 items-center lg:items-start">
+            <button className="bg-gradient-to-r from-orange to-pink hover:from-pink hover:to-orange font-semibold py-3 px-8 rounded-full hover:brightness-90 transition">
+              Apply Now
+            </button>
+            <button className="bg-transparent border-2 border-orange text-orange font-semibold py-3 px-8 rounded-full hover:bg-orange hover:text-white transition">
+              Student Placement Record
+            </button>
+          </div>
         </div>
-        <p className="font-semibold text-lg">
-          Our commitment is to serve you worldwide
-        </p>
-        <div className="h-1 w-20 bg-yellow-400 mx-auto lg:mx-0 my-2" />
-        <p className="font-semibold text-lg">
-          Empowering knowledge <br /> through vision
-        </p>
+
+        {/* Center Image */}
+        <div className="flex-1 max-w-xs mx-auto relative">
+          <Image
+            src="/earth-flight.png"
+            alt="Globe with airplane"
+            width={400}
+            height={400}
+            className="mx-auto rounded-2xl shadow-2xl"
+          />
+        </div>
+
+        {/* Right Card */}
+        <div className="flex-1 backdrop-blur-md bg-white/10 p-8 rounded-2xl shadow-lg text-center lg:text-left max-w-sm space-y-6">
+          <div className="flex justify-center lg:justify-start text-5xl text-white/30">
+            <Quote />
+          </div>
+          <p className="font-bold text-xl">
+            Our commitment is to serve you worldwide
+          </p>
+          <div className="h-1 w-20 bg-yellow-400 mx-auto lg:mx-0" />
+          <p className="font-bold text-xl">
+            Empowering knowledge <br /> through vision
+          </p>
+        </div>
+
       </div>
     </section>
   );

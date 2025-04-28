@@ -56,9 +56,9 @@ export default function Hero() {
 
   return (
     <section>
-      <div className="relative w-full min-h-[39rem] bg-gray-700 flex flex-col-reverse md:flex-row items-center justify-between px-4 md:px-8 py-8 overflow-hidden text-black">
+      <div className="relative w-full min-h-[39rem] bg-gradient-to-b from-black to-indigo-900 flex flex-col-reverse md:flex-row items-center justify-between px-4 md:px-8 py-8 overflow-hidden text-black">
         <Image
-          src="/banner.jpg"
+          src="/main.gif"
           alt="Hero Banner"
           fill
           sizes="100vw"
@@ -67,8 +67,8 @@ export default function Hero() {
           priority
         />
 
-        <div className="relative z-10 text-white max-w-lg text-center md:text-left mt-6 md:mt-0">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-yellow-500 leading-snug drop-shadow">
+        <div className="relative z-10 text-white max-w-lg text-center md:text-left mt-6 md:mt-0 ml-18">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold leading-snug drop-shadow" >
             BECOME AN
             <br />
             AIRCRAFT MAINTENANCE
@@ -80,16 +80,16 @@ export default function Hero() {
           </p>
           <Link
             href="/applynow"
-            className="inline-block bg-gradient-to-r mt-3 from-yellow-500 to-orange-500 text-white font-semibold py-2 px-6 rounded-full shadow-lg hover:from-pink-600 hover:to-purple-600 transition-all duration-300"
+            className="inline-block mt-3 bg-gradient-to-r  from-orange to-pink  text-white font-semibold py-2 px-6 rounded-full shadow-lg hover:from-pink hover:to-orange transition-all duration-300"
           >
             Apply Now
           </Link>
-          <p className="mt-2 text-xs text-orange-600 uppercase font-extrabold animate-pulse ml-2">
+          <p className="mt-3 text-lg text-white uppercase font-extrabold animate-pulse ml-2">
             For AMEEE exam
           </p>
         </div>
 
-        <div className="relative z-10 w-full max-w-sm bg-white bg-opacity-95 p-4 sm:p-6 rounded-xl shadow-xl border border-gray-200 mx-auto">
+        <div className="relative z-10 w-full max-w-sm bg-white bg-opacity-95 p-4 sm:p-6 rounded-xl shadow-xl border border-gray-200 mx-auto mr-15">
           <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 text-center">
             For Any Query
           </h2>
@@ -147,19 +147,38 @@ export default function Hero() {
             <button
               type="submit"
               disabled={submitting}
-              className="w-full bg-yellow-500 disabled:opacity-50 text-white p-2 text-sm rounded font-semibold hover:bg-yellow-600 transition"
-            >
+              className="w-full bg-gradient-to-r from-orange to-pink disabled:opacity-50 text-white p-2 text-sm rounded font-semibold hover:from-pink hover:to-orange transition" >
               {submitting ? "Submitting..." : "Submit"}
             </button>
           </form>
         </div>
       </div>
+      <div className="relative bg-gradient-to-r from-orange to-pink py-4 overflow-hidden">
+  <div className="whitespace-nowrap animate-scroll">
+    <span className="text-white font-bold text-lg md:text-2xl mx-8">
+      Admission Open 2025! Indraprasth Institute of Aeronautics AME course ( ) — 
+      Joining letter will be issued shortly. 
+      Please visit the website regularly for the latest updates. 
+      Information regarding admission will be shared on your email address and mobile number.
+    </span>
+  </div>
 
-      <div className="bg-yellow-600 py-8">
-  <marquee behavior="scroll" direction="left" scrollamount="8" className="text-white font-semibold text-2xl">
-    Admission Open 2025! Indraprasth Institute of Aeronautics AME course ( ) Joining letter issue will be shortly. 
-    Please visit the website regularly for the latest updates. Information regarding admission will be shared on your email address and mobile number.
-  </marquee>
+  <style jsx>{`
+    @keyframes scroll {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .animate-scroll {
+      display: inline-block;
+      animation: scroll 30s linear infinite;
+      animation-delay: 5s; /* Delay the animation by 5 seconds */
+    }
+  `}</style>
 </div>
 
     </section>

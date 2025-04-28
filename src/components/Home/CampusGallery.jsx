@@ -15,7 +15,7 @@ const CampusGallery = () => {
     "/100.jpeg",
     "/111.jpeg",
     "/B1-4.png",
-      "/63.jpeg",
+      "/81.jpeg",
         "/78.jpeg",
           "/66.jpeg",
     "/96.jpeg", 

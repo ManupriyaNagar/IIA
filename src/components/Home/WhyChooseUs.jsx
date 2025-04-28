@@ -24,24 +24,32 @@ const WhyChooseSection = () => {
   const rightFeatures = features.slice(mid);
 
   return (
-    <section className="py-20 bg-gradient-to-r from-white via-blue-50 to-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-gradient-to-r from-white via-blue-50 to-white relative">
+      {/* Background image */}
+      <div className="absolute inset-0 opacity-30">
+        <img
+          src="/68.jpeg" // <-- Replace with your actual image
+          alt="Background"
+          className="object-cover w-full h-full"
+        />
+      </div>
+
+      {/* Content */}
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-extrabold text-center text-blue-900 mb-12">
-          WHY CHOOSE IIA GURGAON?
+          WHY CHOOSE IIAG GURGAON?
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch bg-transparent">
           {/* Left Features */}
-          <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col h-full">
+          <div className="bg-white/60 backdrop-blur-lg rounded-2xl shadow-lg p-6 flex flex-col h-full">
             <ul className="space-y-4 flex-1">
               {leftFeatures.map((point, idx) => (
                 <li key={idx} className="flex items-start">
-                  <div className="flex-shrink-0 bg-blue-100 text-blue-600 p-2 rounded-full mr-4 mt-1">
+                  <div className="flex-shrink-0 bg-blue-100 text-blue p-2 rounded-full mr-4 mt-1">
                     <FaPlane />
                   </div>
-                  <p className="text-gray-800 text-sm leading-relaxed">
-                    {point}
-                  </p>
+                  <p className="text-gray-800 text-sm leading-relaxed">{point}</p>
                 </li>
               ))}
             </ul>
@@ -59,16 +67,14 @@ const WhyChooseSection = () => {
           </div>
 
           {/* Right Features */}
-          <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col h-full">
+          <div className="bg-white/60 backdrop-blur-lg rounded-2xl shadow-lg p-6 flex flex-col h-full">
             <ul className="space-y-4 flex-1">
               {rightFeatures.map((point, idx) => (
                 <li key={idx} className="flex items-start">
-                  <div className="flex-shrink-0 bg-blue-100 text-blue-600 p-2 rounded-full mr-4 mt-1">
+                  <div className="flex-shrink-0 bg-blue-100 text-blue p-2 rounded-full mr-4 mt-1">
                     <FaPlane />
                   </div>
-                  <p className="text-gray-800 text-sm leading-relaxed">
-                    {point}
-                  </p>
+                  <p className="text-gray-800 text-sm leading-relaxed">{point}</p>
                 </li>
               ))}
             </ul>

@@ -4,7 +4,7 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="space-y-8 py-12 bg-white text-black px-14 mr-10">
+    <div className="space-y-8 py-12 bg-white text-black px-14 max-w-7xl">
       
       <div className="border-b-2 border-t-2 border-l-2 ml-9 border-dotted border-gray-900 w-full rounded-l-3xl">
         {/* First Part: Heading and Paragraph */}

@@ -41,9 +41,9 @@ export default function AcademyInfo() {
           <div className="flex flex-col items-center text-center space-y-4">
             <div className="bg-gradient-to-r from-orange to-pink rounded-full p-4">
               <img
-                src="https://cdn-icons-png.flaticon.com/512/3135/3135792.png"
+                src="/DGCA.gif"
                 alt="Alumni Icon"
-                className="h-8 w-8"
+                className="h-24 w-24"
               />
             </div>
             <h3 className=" text-white rounded-full text-xl font-semibold">
@@ -61,9 +61,9 @@ export default function AcademyInfo() {
           <div className="flex flex-col items-center text-center space-y-4">
             <div className="bg-gradient-to-r from-orange to-pink rounded-full p-4">
               <img
-                src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                src="/Faculty.gif"
                 alt="Experience Icon"
-                className="h-8 w-8"
+                className="h-24 w-24"
               />
             </div>
             <h3 className="text-white text-xl font-semibold">
@@ -80,9 +80,9 @@ export default function AcademyInfo() {
           <div className="flex flex-col items-center text-center space-y-4">
             <div className="bg-gradient-to-r from-orange to-pink rounded-full p-4">
               <img
-                src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png"
+                src="/Art.gif"
                 alt="State-of-the-Art Facilities Icon"
-                className="h-8 w-8"
+                className="h-24 w-24"
               />
             </div>
             <h3 className="text-white text-xl font-semibold">

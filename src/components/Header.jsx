@@ -4,10 +4,16 @@ import { Menu, X } from 'lucide-react';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null); // NEW
+
+  const toggleDropdown = (menu) => {
+    setOpenDropdown(openDropdown === menu ? null : menu);
+  };
 
   return (
     <header className="bg-blue text-white shadow-md">
       <nav className="bg-blue px-4 py-4 relative">
+
         {/* Mobile Menu Toggle */}
         <div className="flex justify-between items-center md:hidden">
           <span className="text-lg font-semibold">IIA Gurgaon</span>
@@ -17,24 +23,22 @@ export default function Header() {
         </div>
 
         {/* Nav Links */}
-          <ul
-    className={`${
-      menuOpen ? 'block' : 'hidden'
-    } md:flex w-full md:justify-evenly   /* ← full width + evenly spaced */
-       flex-col md:flex-row 
-       md:items-center 
-       md:space-x-6 space-y-2 md:space-y-0 
-       mt-4 md:mt-0 
-       text-sm lg:text-base 
-       font-medium whitespace-nowrap 
-       z-50`}
-  >
+        <ul
+          className={`${
+            menuOpen ? 'block' : 'hidden'
+          } md:flex w-full md:justify-evenly flex-col md:flex-row 
+            md:items-center md:space-x-6 space-y-2 md:space-y-0 
+            mt-4 md:mt-0 text-sm lg:text-base font-medium whitespace-nowrap z-50`}
+        >
           <li><a href="/" className="hover:text-orange transition">Home</a></li>
 
-          {/* IIA Dropdown */}
-          <li className="relative group">
-            <a href="#" className="hover:text-orange transition">IIA</a>
-            <ul className="md:absolute md:top-full left-0 hidden group-hover:md:block bg-gradient-to-r from-orange to-pink rounded shadow-lg min-w-[200px] z-50">
+          {/* Click Dropdown - IIA */}
+          <li className="relative">
+            <button onClick={() => toggleDropdown('iia')} className="hover:text-orange transition">
+              IIA
+            </button>
+            <ul className={`absolute top-full left-0 bg-gradient-to-r from-orange to-pink rounded shadow-lg min-w-[200px] z-50 transform transition-all duration-300 ease-out mt-6
+              ${openDropdown === 'iia' ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0 pointer-events-none'}`}>
               <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">About IIA</a></li>
               <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">Managing Director Message</a></li>
             </ul>
@@ -44,19 +48,25 @@ export default function Header() {
           <li><a href="#" className="hover:text-orange transition">AMEEE</a></li>
           <li><a href="#" className="hover:text-orange transition">Admission</a></li>
 
-          {/* Courses Dropdown */}
-          <li className="relative group">
-            <a href="#" className="hover:text-orange transition">Our Courses</a>
-            <ul className="md:absolute md:top-full left-0 hidden group-hover:md:block bg-gradient-to-r from-orange to-pink  rounded shadow-lg min-w-[200px] z-50">
+          {/* Click Dropdown - Courses */}
+          <li className="relative">
+            <button onClick={() => toggleDropdown('courses')} className="hover:text-orange transition">
+              Our Courses
+            </button>
+            <ul className={`absolute top-full left-0 bg-gradient-to-r from-orange to-pink rounded shadow-lg min-w-[200px] z-50 transform transition-all duration-300 ease-out mt-6
+              ${openDropdown === 'courses' ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0 pointer-events-none'}`}>
               <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">AME Course</a></li>
               <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">Fee Structure</a></li>
             </ul>
           </li>
 
-          {/* Campus Life Dropdown */}
-          <li className="relative group">
-            <a href="#" className="hover:text-orange transition">Campus Life</a>
-            <ul className="md:absolute md:top-full left-0 hidden group-hover:md:block bg-gradient-to-r from-orange to-pink rounded shadow-lg min-w-[220px] z-50">
+          {/* Click Dropdown - Campus Life */}
+          <li className="relative">
+            <button onClick={() => toggleDropdown('campus')} className="hover:text-orange transition">
+              Campus Life
+            </button>
+            <ul className={`absolute top-full left-0 bg-gradient-to-r from-orange to-pink rounded shadow-lg min-w-[220px] z-50 transform transition-all duration-300 ease-out mt-6
+              ${openDropdown === 'campus' ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0 pointer-events-none'}`}>
               <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">Admission</a></li>
               <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">Eligibility</a></li>
               <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">Why Choose IIAG</a></li>
@@ -71,17 +81,15 @@ export default function Header() {
           <li><a href="#" className="hover:text-orange transition">Media</a></li>
           <li><a href="#" className="hover:text-orange transition">Testimonials</a></li>
           <li><a href="#" className="hover:text-orange transition">Contact Us</a></li>
+
           <li>
-          <a
-  href="/enquirynow"
-  className="relative inline-block bg-gradient-to-r from-orange to-pink hover:from-pink hover:to-orange text-gray-900 font-bold px-4 py-2 rounded-full overflow-hidden transition-all duration-300 hover:bg-yellow-600"
->
-  <span className="absolute inset-0 rounded-full border-2 border-yellow-400 opacity-50 animate-slow-ping"></span>
-  <span className="relative text-white from-yellow-500 to-orange-500">Direct Admission</span>
-</a>
-
-          
-
+            <a
+              href="/enquirynow"
+              className="relative inline-block bg-gradient-to-r from-orange to-pink hover:from-pink hover:to-orange text-gray-900 font-bold px-4 py-2 rounded-full overflow-hidden transition-all duration-300 hover:bg-yellow-600"
+            >
+              <span className="absolute inset-0 rounded-full border-2 border-yellow-400 opacity-50 animate-slow-ping"></span>
+              <span className="relative text-white from-yellow-500 to-orange-500">Direct Admission</span>
+            </a>
           </li>
         </ul>
       </nav>

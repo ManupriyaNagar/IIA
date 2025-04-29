@@ -156,9 +156,9 @@ export default function Hero() {
           </form>
         </div>
       </div>
-      <div className="relative bg-gradient-to-r from-orange to-pink py-4 overflow-hidden">
+      <div className="relative bg-gradient-to-r from-orange to-pink py-2 overflow-hidden">
   <div className="whitespace-nowrap animate-scroll">
-    <span className="text-white font-bold text-lg md:text-2xl mx-8">
+    <span className="text-white text-lg md:text-lg mx-8">
       Admission Open 2025! Indraprasth Institute of Aeronautics AME course ( ) — 
       Joining letter will be issued shortly. 
       Please visit the website regularly for the latest updates. 
@@ -179,7 +179,7 @@ export default function Hero() {
     .animate-scroll {
       display: inline-block;
       animation: scroll 30s linear infinite;
-      animation-delay: 5s; /* Delay the animation by 5 seconds */
+      animation-delay: 3s; /* Delay the animation by 5 seconds */
     }
   `}</style>
 </div>

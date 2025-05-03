@@ -20,6 +20,13 @@ export default function RootLayout({ children }) {
   <meta charSet="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="/5.png" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-xxx" 
+  crossOrigin="anonymous"
+  referrerPolicy="no-referrer"
+/>
   <title>IIA GURGAON</title>
   <script src="https://coolors.co/palette-widget/widget.js"></script>
   <script data-id="008817269207344369">new CoolorsPaletteWidget("008817269207344369", ["F04861","F36F58","DEE4E2","303380","FFFFFF"]); </script>

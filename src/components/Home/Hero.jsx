@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import baseURL from "@/baseurl/baseURL";
 
@@ -56,44 +55,42 @@ export default function Hero() {
 
   return (
     <section>
-      <div className="relative w-full min-h-[39rem] bg-gradient-to-b from-black to-indigo-900 flex flex-col-reverse md:flex-row items-center justify-between px-4 md:px-8 py-8 overflow-hidden text-black">
-      <video
-  src="/w.mp4"  // Replace with the path to your video file
-  alt="Hero Banner"
-  className="opacity-30"
-  autoPlay
-  muted
-  loop
-  playsInline
-  style={{ objectFit: "cover", width: "100%", height: "100%", position: "absolute" }}
-  priority
-/>
+      {/* Hero Section with Background Video */}
+      <div className="relative w-full min-h-[42rem] bg-gradient-to-b from-black to-indigo-900 flex flex-col-reverse md:flex-row items-center justify-center py-10 px-4 sm:px-6 md:px-12 text-black">
+        {/* Video Background */}
+        <video
+          src="/w.mp4"
+          className="absolute top-0 left-0 w-full h-full object-cover opacity-30 z-0"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
 
-
-        <div className="relative z-10 text-white max-w-lg text-center md:text-left mt-6 md:mt-0 ml-18">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold leading-snug drop-shadow" >
-            BECOME AN
-            <br />
-            AIRCRAFT MAINTENANCE
-            <br />
+        {/* Hero Text */}
+        <div className="relative z-10 text-white text-center md:text-left max-w-lg w-full mt-8 md:mt-0">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-snug drop-shadow">
+            BECOME AN <br />
+            AIRCRAFT MAINTENANCE <br />
             ENGINEER
           </h1>
-          <p className="text-sm sm:text-base text-gray-200 mt-3 max-w-sm mx-auto md:mx-0 drop-shadow">
+          <p className="text-sm sm:text-base text-gray-200 mt-4 drop-shadow max-w-xs mx-auto md:mx-0">
             Start your journey with a rewarding career in aviation maintenance.
           </p>
           <Link
             href="/applynow"
-            className="inline-block mt-3 bg-gradient-to-r  from-orange to-pink  text-white font-semibold py-2 px-6 rounded-full shadow-lg hover:from-pink hover:to-orange transition-all duration-300"
+            className="inline-block mt-4 bg-gradient-to-r from-orange to-pink text-white font-semibold py-2 px-6 rounded-full shadow-lg hover:from-pink hover:to-orange transition-all duration-300"
           >
             Apply Now
           </Link>
-          <p className="mt-3 text-lg text-white uppercase font-extrabold animate-pulse ml-2">
+          <p className="mt-3 text-sm sm:text-base text-white uppercase font-bold animate-pulse">
             For AMEEE exam
           </p>
         </div>
 
-        <div className="relative z-10 w-full max-w-sm bg-white bg-opacity-95 p-4 sm:p-6 rounded-xl shadow-xl border border-gray-200 mx-auto mr-15">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 text-center">
+        {/* Form */}
+        <div className="relative z-10 w-full max-w-md bg-white bg-opacity-95 p-5 sm:p-6 rounded-xl shadow-xl border border-gray-200 mb-6 md:mb-0">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 text-center">
             For Any Query
           </h2>
           <p className="text-gray-700 mb-4 text-center text-sm">
@@ -144,46 +141,45 @@ export default function Hero() {
               rows={3}
               className="w-full p-2 text-sm border border-gray-300 rounded focus:ring-2 focus:ring-yellow-600"
             />
-
             {error && <p className="text-red-600 text-xs text-center">{error}</p>}
             {success && <p className="text-green-600 text-xs text-center">Enquiry submitted!</p>}
             <button
               type="submit"
               disabled={submitting}
-              className="w-full bg-gradient-to-r from-orange to-pink disabled:opacity-50 text-white p-2 text-sm rounded font-semibold hover:from-pink hover:to-orange transition" >
+              className="w-full bg-gradient-to-r from-orange to-pink disabled:opacity-50 text-white p-2 text-sm rounded font-semibold hover:from-pink hover:to-orange transition"
+            >
               {submitting ? "Submitting..." : "Submit"}
             </button>
           </form>
         </div>
       </div>
+
+      {/* Marquee Notice Section */}
       <div className="relative bg-gradient-to-r from-orange to-pink py-2 overflow-hidden">
-  <div className="whitespace-nowrap animate-scroll">
-    <span className="text-white text-lg md:text-lg mx-8">
-      Admission Open 2025! Indraprasth Institute of Aeronautics AME course ( ) — 
-      Joining letter will be issued shortly. 
-      Please visit the website regularly for the latest updates. 
-      Information regarding admission will be shared on your email address and mobile number.
-    </span>
-  </div>
+        <div className="whitespace-nowrap animate-scroll">
+          <span className="text-white text-sm sm:text-base mx-8">
+            Admission Open 2025! Indraprastha Institute of Aeronautics AME course — 
+            Joining letter will be issued shortly. 
+            Please visit the website regularly for the latest updates. 
+            Information regarding admission will be shared on your email and mobile.
+          </span>
+        </div>
 
-  <style jsx>{`
-    @keyframes scroll {
-      0% {
-        transform: translateX(100%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
-    }
-
-    .animate-scroll {
-      display: inline-block;
-      animation: scroll 30s linear infinite;
-      animation-delay: 3s; /* Delay the animation by 5 seconds */
-    }
-  `}</style>
-</div>
-
+        <style jsx>{`
+          @keyframes scroll {
+            0% {
+              transform: translateX(100%);
+            }
+            100% {
+              transform: translateX(-100%);
+            }
+          }
+          .animate-scroll {
+            display: inline-block;
+            animation: scroll 30s linear infinite;
+          }
+        `}</style>
+      </div>
     </section>
   );
 }

@@ -8,38 +8,38 @@ export function AnimatedTestimonialsDemo() {
   const testimonials = [
     {
       quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
+        "Indraprasth Institute of Aeronautics, Gurgaon is the best institution for pursuing Aircraft Maintenance Engineering” and other integrated degree courses. The college has its most qualified and experienced faculty that enlighten the path of students. The college has its well-equipped labs, workshops and library. The training programs and placement facilities are excellent. Outdoor hostel are available here. Good place to learn with excellent faculties. Institution provides good education and placement assistance to very student in the college. The college provides wings to dreams of students.",
+      name: "Sonakshi Priya",
       designation: "Product Manager at TechFlow",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "/t1.jpg",
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
+        "The teaching staff here is well qualified. IIAG One of the most important things is that instead of being a private college it has a lot of reputation among students because of the quality of education and infrastructure they are providing to the students who are studying here. The hostel facilities is also available here.",
       name: "Michael Rodriguez",
       designation: "CTO at InnovateSphere",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "/t2.jpg",
     },
     {
       quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
+        "IIAG is best college. Infrastructure is the best. All  facilities are provide in by institute ... Alumni network  is so big and strong. Culture inside the campus is great. I'm proud to be a part of such wonderful family.",
+      name: "Abhishek singh",
       designation: "Operations Director at CloudScale",
-      src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "/t3.jpg",
     },
     {
       quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
+        "No 1 AME college. Major feature are discipline, study , result oriented and mostly placement.Nice faculty. Great support for clear modules exam. when we talk for quality and job . Indraprasth Institute Of Aeronautics is best for everything.",
+      name: "Viplav Kumar",
       designation: "Engineering Lead at DataPro",
-      src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "/t4.jpg",
     },
     {
       quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
+        "If you want to become an Aircraft Maintenance Engineer, IIAG is the perfect place for you. This college has given me a lot of confidence, a lot of friends and a lot of good memories. The faculty, the management, the infrastructure everything is commendable.",
+      name: "Lakshmi Narayan",
       designation: "VP of Technology at FutureNet",
-      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "/t5.jpg",
     },
   ];
 
@@ -77,10 +77,13 @@ function AnimatedTestimonials({ testimonials = [], autoplay = false }) {
   }
 
   return (
-    <div className="mx-auto max-w-sm px-4 py-20 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12">
+    <div className="mx-auto max-w-lg px-4 py-20 font-sans antialiased md:max-w-5xl md:px-8 lg:px-12">
+       <h1 className="text-5xl mb-8 text-center">Testimonials</h1>
       <div className="relative grid grid-cols-1 gap-20 md:grid-cols-2">
         {/* Image Section */}
+       
         <div>
+     
           <div className="relative h-80 w-full">
             <AnimatePresence>
               {testimonials.map((testimonial, index) => (
@@ -137,12 +140,12 @@ function AnimatedTestimonials({ testimonials = [], autoplay = false }) {
             exit={{ y: -20, opacity: 0 }}
             transition={{ duration: 0.2, ease: "easeInOut" }}
           >
-            <h3 className="text-2xl font-bold text-black dark:text-white">
+            {/* <h3 className="text-2xl font-bold text-black dark:text-white">
               {testimonials[active]?.name || "Anonymous"}
-            </h3>
-            <p className="text-sm text-gray-500 dark:text-neutral-500">
+            </h3> */}
+            {/* <p className="text-sm text-gray-500 dark:text-neutral-500">
               {testimonials[active]?.designation || ""}
-            </p>
+            </p> */}
             <motion.p className="mt-8 text-lg text-gray-500 dark:text-neutral-300">
               {(testimonials[active]?.quote || "")
                 .split(" ")

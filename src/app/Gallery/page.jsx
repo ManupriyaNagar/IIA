@@ -27,7 +27,7 @@ const images = [
     "/93.jpeg",
     "/78.jpeg",
     "/96.jpeg",
-    "100.jpeg",
+    "/100.jpeg",
     "/111.jpeg",
     "/4.jpeg",
     "/16.jpeg",  
@@ -59,7 +59,7 @@ function ParallaxScroll({ images }) {
 
   return (
     <div className="h-[40rem] overflow-y-auto w-full" ref={gridRef}>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto gap-10 py-40 px-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto gap-5 py-30 ">
         <div className="grid gap-10">
           {firstPart.map((img, idx) => (
             <motion.div style={{ y: translateFirst }} key={`img-1-${idx}`}>
@@ -88,7 +88,7 @@ function ParallaxScroll({ images }) {
               <img
                 src={img}
                 alt="thumbnail"
-                className="h-80 w-full object-cover rounded-lg"
+                className="h-90 w-full object-cover rounded-lg"
               />
             </motion.div>
           ))}

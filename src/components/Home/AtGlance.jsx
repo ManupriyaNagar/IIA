@@ -1,15 +1,14 @@
 // components/AbesAtAGlance.tsx
 export default function AbesAtAGlance() {
     const stats = [
-      { title: 'Est. 2000', subtitle: 'Celebrating 25 Years Of Excellence' },
-      { title: '7,299', subtitle: 'Students in Campus' },
-      { title: '18,000+', subtitle: 'Alumni Worldwide' },
-      { title: '35+', subtitle: 'Startups Incubated' },
-      { title: '59.91 LPA', subtitle: 'Highest Package in Placements 2024' },
-      { title: '1683', subtitle: 'Offers in Placement 2024' },
-      { title: '14.16 Acres', subtitle: 'Campus With All Modern Facilities' },
-      { title: '500+', subtitle: 'Recruiters' },
-      { title: '1672+', subtitle: 'Scopus Publication' },
+      { title: 'Est. 2006', subtitle: 'Celebrating 20 Years Of Excellence' },
+      { title: '360', subtitle: 'Students in Campus' },
+      { title: '3000+', subtitle: 'Alumni Worldwide' },
+      { title: '51 LPA', subtitle: 'Highest Package in Placements 2024' },
+      { title: '80', subtitle: 'Offers in Placement 2024' },
+      { title: '3 Acres', subtitle: 'Campus With All Modern Facilities' },
+      { title: '30+', subtitle: 'Recruiters' },
+     
     ];
   
     return (

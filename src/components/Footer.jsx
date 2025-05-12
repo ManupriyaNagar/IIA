@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { FaFacebookF, FaYoutube, FaInstagram } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -49,7 +50,11 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold text-lg mb-3">Our Contacts</h4>
           <p className="text-gray-300">Support & Helpdesk</p>
-          <p className="text-white text-xl font-bold mb-4">1800 3090503</p>
+          <p className="text-gray-300 ">admission@iiagurgaon.com</p>
+          <p className="text-gray-300 ">9212170033/22</p>
+          <p className="text-gray-300 ">1800 309 0503</p>
+
+          
           <button className="inline-block mt-4 bg-gradient-to-r from-orange to-pink text-white font-semibold py-2 px-6 rounded-full shadow-lg hover:from-pink hover:to-orange transition-all duration-300">
             Enquire Now
           </button>
@@ -82,34 +87,30 @@ export default function Footer() {
 
         {/* Social */}
         <div>
-          <h4 className="font-semibold text-lg mb-3">Follow Us</h4>
-          <div className="flex justify-center gap-6 text-xl">
-        <a href="#" aria-label="Facebook" className="hover:text-blue-500 transition">
-          <i className="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" aria-label="YouTube" className="hover:text-red-600 transition">
-          <i className="fab fa-youtube"></i>
-        </a>
-        <a href="#" aria-label="Instagram" className="hover:text-pink-500 transition">
-          <i className="fab fa-instagram"></i>
-        </a>
-      </div>
+          <h4 className='font-semibold text-lg mb-3'>Follow US:</h4>
+       
+      <div className="flex justify-center gap-6 text-xl pr-5 mr-19">
+       
+       
+  <a href="https://www.facebook.com/iiagurgoan/" aria-label="Facebook" className="hover:text-blue-500 transition">
+    <FaFacebookF />
+  </a>
+  <a href="https://www.youtube.com/@IndraprasthInstituteOfAeronaut" aria-label="YouTube" className="hover:text-red-600 transition">
+    <FaYoutube />
+  </a>
+  <a href="https://www.instagram.com/iiag.ame?igsh=MWVuaXNsNm9xaTN0dA==" aria-label="Instagram" className="hover:text-pink-500 transition">
+    <FaInstagram />
+  </a>
+</div>
+</div>
 
         </div>
-      </div>
+    
 
       {/* Bottom Text */}
       <div className="text-center text-gray-500 text-sm border-t border-gray-700 pt-6 pb-4 px-4">
   {/* Logo */}
-  <div className="flex justify-center">
-    <Image
-      src="/u.png" // Replace with actual path
-      alt="RBSH Logo"
-      width={100}
-      height={100}
-      className="object-contain"
-    />
-  </div>
+
 
   {/* Horizontal line and text block in center */}
   <div className="flex items-center justify-center w-full">
@@ -117,14 +118,32 @@ export default function Footer() {
     <div className="h-px bg-white flex-1" />
 
     {/* Centered text column */}
-    <div className="px-4 text-white text-sm flex flex-col items-center space-y-1">
-      <p className="font-semibold text-blue-400">Powered By RBSH STUDIO</p>
+    <div className="px-4 text-white text-sm items-center space-y-1">
+     
       <p>Indraprasth Institute of Aeronautics Gurgaon. © 2025. All Rights Reserved.</p>
+   
     </div>
+        <div className="h-px bg-white flex-1" />
+       
+      
+    
 
     {/* Right line */}
-    <div className="h-px bg-white flex-1" />
+
+
   </div>
+   <p className="font-semibold text-blue-400">
+  Powered By{" "}
+  <a
+    href="https://www.rbshstudio.com" // replace with the actual URL if different
+    target="_blank"
+    rel="noopener noreferrer"
+    className=" hover:text-blue-600"
+  >
+    RBSH STUDIO
+  </a>
+</p>
+
 </div>
 
     </footer>

@@ -55,7 +55,7 @@ const CoursesEligibility = () => {
           </h2>
           <ul className="list-disc list-inside mt-3 space-y-2 text-sm md:text-base">
             <li>
-              Candidates must be between 14 and 30 years of age at the time of Admission.
+              Candidates must be between 17 and 30 years of age at the time of Admission.
             </li>
             <li>
               Candidates who have either appeared for or passed their 12th Grade with Physics, Chemistry &

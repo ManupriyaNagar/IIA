@@ -5,18 +5,23 @@ import { useScroll, useTransform, motion } from "framer-motion";
 export function TimelineDemo() {
   const data = [
     {
-      title: "2024",
+      title: "Through AMEEE EXAM",
       content: (
         <div>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+          <p className="mb-8 text-lg font-normal text-neutral-800 md:text-xl dark:text-neutral-200">
+            Registration Process:
+            <br />
+            ✅ Visit AMEEE official website or scan QR<br />
+            ✅ Click on “AMEEE 2024” Apply now<br />
+            ✅Complete the AMEEE 2024 Registration Process.
+            {/* ✔ Complete the AMEEE 2024 Registration Process. */}
           </p>
           <div className="grid grid-cols-2 gap-4">
-            {["startup-1", "startup-2", "startup-3", "startup-4"].map((img, i) => (
+            {["/tp1.png", "/tp2.png"].map((img, i) => (
               <img
                 key={i}
-                src={`https://assets.aceternity.com/templates/${img}.webp`}
-                alt="startup template"
+                src={`${img}`}
+                alt={`AMEEE step ${i + 1}`}
                 width={500}
                 height={500}
                 className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
@@ -27,49 +32,23 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "Early 2023",
+      title: "Direct Admission",
       content: (
         <div>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            I usually run out of copy, but when I see content this big, I try to integrate lorem ipsum.
+          <p className="mb-4 text-lg font-normal text-neutral-800 md:text-xl dark:text-neutral-200">
+            Registration Process:
           </p>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Lorem ipsum is for people who are too lazy to write copy. But we are not. Here are some more example of beautiful designs I built.
-          </p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="mb-8 space-y-2 text-lg md:text-xl text-neutral-700 dark:text-neutral-300">
             {[
-              ["hero-sections", "pro"],
-              ["features-section", ""],
-              ["bento-grids", "pro"],
-              ["cards", ""],
-            ].map(([img, path], i) => (
-              <img
-                key={i}
-                src={`https://assets.aceternity.com/${path ? path + "/" : ""}${img}.png`}
-                alt="template"
-                width={500}
-                height={500}
-                className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-              />
-            ))}
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: "Changelog",
-      content: (
-        <div>
-          <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Deployed 5 new components on Aceternity today
-          </p>
-          <div className="mb-8 space-y-2 text-xs md:text-sm text-neutral-700 dark:text-neutral-300">
-            {[
-              "✅ Card grid component",
-              "✅ Startup template Aceternity",
-              "✅ Random file upload lol",
-              "✅ Himesh Reshammiya Music CD",
-              "✅ Salman Bhai Fan Club registrations open",
+              "✅ Visit IIA official website or scan QR",
+              "✅ Click on “Direct Admission” Apply now",
+              "✅ Fill out the form",
+              "✅ Upload required documents",
+              "✅ Pay the registration fee",
+              "✅ Wait for confirmation and further communication from the admissions team",
+              "✅ Attend the counseling session or entrance test, if applicable",
+              "✅ Complete the final enrollment process upon selection",
+              
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-2">
                 {item}
@@ -77,16 +56,11 @@ export function TimelineDemo() {
             ))}
           </div>
           <div className="grid grid-cols-2 gap-4">
-            {[
-              ["hero-sections", "pro"],
-              ["features-section", ""],
-              ["bento-grids", "pro"],
-              ["cards", ""],
-            ].map(([img, path], i) => (
+            {["/direct1.png", "/direct2.png"].map((img, i) => (
               <img
                 key={i}
-                src={`https://assets.aceternity.com/${path ? path + "/" : ""}${img}.png`}
-                alt="template"
+                src={`${img}`}
+                alt={`Direct admission ${i + 1}`}
                 width={500}
                 height={500}
                 className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
@@ -122,10 +96,10 @@ export function TimelineDemo() {
       <div className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10" ref={containerRef}>
         <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
           <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
-            Changelog from my journey
+            ADMISSION CAN BE DONE THROUGH AMEEE EXAM OR DIRECT ADMISSION
           </h2>
-          <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-            I&apos;ve been working on Aceternity for the past 2 years. Here&apos;s a timeline of my journey.
+          <p className="text-neutral-700 dark:text-neutral-300 text-lg md:text-xl max-w-sm">
+            The AMEEE exam is a national entrance test for admission to UG and PG programs in engineering, management, and more.
           </p>
         </div>
         <div ref={ref} className="relative max-w-7xl mx-auto pb-20">

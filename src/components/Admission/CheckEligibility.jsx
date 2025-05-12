@@ -3,7 +3,7 @@ export default function CheckEligibility() {
     const courses = [
       {
         title: "Aircraft Maintenance Engineering (AME)",
-        age: "15 to 30 years",
+        age: "17 to 30 years",
         qualification: "12th pass with Physics, Chemistry, and Mathematics or a 3-year Engineering Diploma.",
       },
       {

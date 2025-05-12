@@ -10,7 +10,7 @@ export default function RegistrationAndDocuments() {
       "Photocopy of 12th Marks Sheet (for Class 12 students).",
       "Aadhar Card (for identity verification).",
       "Passport-size Photograph (6 copies).",
-      "Character Certificate from the school/college.",
+      "Character Certificate from the school/college (if applicable).",
       "Medical Certificate (for the AMEEE Exam and general health verification).",
       "Proof of Age (Birth Certificate or 10th-grade certificate).",
       "Transfer Certificate from the previous institution (if applicable).",

@@ -21,7 +21,8 @@ const Banner = () => {
       {/* Heading */}
       <h1 className="relative z-20 text-white text-4xl md:text-6xl font-bold text-center">
         IIAG
-        <br /> International Institute of Advanced Geospatial Studies   
+        <br /> 
+        Indraprasth Institute of Aeronautics 
       </h1>
     </section>
   );

@@ -8,7 +8,7 @@ export default function ContactUs() {
     alert("Form submitted!");
   };
   return (
-    <section className="relative bg-gray-950 text-white py-20 mt-10">
+    <section className="relative bg-gray-950 text-white py-20">
       <div className="max-w-7xl mx-auto px-6">
         {/* Hero Section */}
         <motion.div

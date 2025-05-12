@@ -1,4 +1,5 @@
 import Banner from '@/components/IIAG/banner';
+import ImageTextScroll from '@/components/IIAG/ImageTextScroll';
 import { StickyScrollRevealDemo } from '@/components/IIAG/Stiky';
 import TextGenerateEffect from '@/components/IIAG/TextGenrateEffect';
 import { TypewriterEffectSmooth, TypewriterEffectSmoothDemo } from '@/components/IIAG/TypeWritting';
@@ -13,6 +14,7 @@ const Page = () => {
           {/* <TypewriterEffectSmooth/> */}
           <TypewriterEffectSmoothDemo/>
           <StickyScrollRevealDemo/>
+          {/* <ImageTextScroll/> */}
         </div>
     );
 };

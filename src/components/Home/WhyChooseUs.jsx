@@ -59,9 +59,9 @@ const WhyChooseSection = () => {
           <div className="flex justify-center">
             <div className="rounded-2xl overflow-hidden shadow-lg w-full max-w-sm h-full">
               <img
-                src="/b.png"
+                src="/ame.png"
                 alt="Air hostess walking near aircraft"
-                className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                className="w-full h-[520px] object-cover transition-transform duration-500 hover:scale-105"
               />
             </div>
           </div>

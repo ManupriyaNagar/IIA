@@ -34,53 +34,59 @@ export default function Header() {
 
           {/* Click Dropdown - IIA */}
           <li className="relative">
+          
             <button onClick={() => toggleDropdown('iia')} className="hover:text-orange transition">
               IIA
             </button>
+         
             <ul className={`absolute top-full left-0 bg-gradient-to-r from-orange to-pink rounded shadow-lg min-w-[200px] z-50 transform transition-all duration-300 ease-out mt-6
               ${openDropdown === 'iia' ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0 pointer-events-none'}`}>
-              <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">About IIA</a></li>
-              <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">Managing Director Message</a></li>
+              <li><a href="/IIAG" className="block px-4 py-2 hover:bg-blue rounded">About IIA</a></li>
+              <li><a href="/IIAG/message" className="block px-4 py-2 hover:bg-blue rounded">Managing Director Message</a></li>
             </ul>
           </li>
 
-          <li><a href="#" className="hover:text-orange transition">Academics</a></li>
-          <li><a href="#" className="hover:text-orange transition">AMEEE</a></li>
-          <li><a href="#" className="hover:text-orange transition">Admission</a></li>
+          <li><a href="/Academics" className="hover:text-orange transition">Academics</a></li>
+          <li><a href="/AMEEE" className="hover:text-orange transition">AMEEE</a></li>
+          <li><a href="/Admission" className="hover:text-orange transition">Admission</a></li>
 
           {/* Click Dropdown - Courses */}
           <li className="relative">
+           
             <button onClick={() => toggleDropdown('courses')} className="hover:text-orange transition">
               Our Courses
             </button>
+            
             <ul className={`absolute top-full left-0 bg-gradient-to-r from-orange to-pink rounded shadow-lg min-w-[200px] z-50 transform transition-all duration-300 ease-out mt-6
               ${openDropdown === 'courses' ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0 pointer-events-none'}`}>
-              <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">AME Course</a></li>
-              <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">Fee Structure</a></li>
+              <li><a href="/OurCourses" className="block px-4 py-2 hover:bg-blue rounded">AME Course</a></li>
+              <li><a href="/OurCourses" className="block px-4 py-2 hover:bg-blue rounded">Fee Structure</a></li>
             </ul>
           </li>
 
           {/* Click Dropdown - Campus Life */}
           <li className="relative">
+          
             <button onClick={() => toggleDropdown('campus')} className="hover:text-orange transition">
               Campus Life
             </button>
+            
             <ul className={`absolute top-full left-0 bg-gradient-to-r from-orange to-pink rounded shadow-lg min-w-[220px] z-50 transform transition-all duration-300 ease-out mt-6
               ${openDropdown === 'campus' ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0 pointer-events-none'}`}>
-              <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">Admission</a></li>
-              <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">Eligibility</a></li>
-              <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">Why Choose IIAG</a></li>
-              <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">Download Medical Certificate</a></li>
-              <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">Offline Admission Form</a></li>
-              <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">AMEEE</a></li>
-              <li><a href="#" className="block px-4 py-2 hover:bg-blue rounded">Education Loan</a></li>
+              <li><a href="/CampusLife" className="block px-4 py-2 hover:bg-blue rounded">Admission</a></li>
+              <li><a href="/CampusLife/eligibility" className="block px-4 py-2 hover:bg-blue rounded">Eligibility</a></li>
+              <li><a href="/CampusLife/whychoose" className="block px-4 py-2 hover:bg-blue rounded">Why Choose IIAG</a></li>
+              {/* <li><a href="/CampusLife" className="block px-4 py-2 hover:bg-blue rounded">Download Medical Certificate</a></li> */}
+              <li><a href="/CampusLife" className="block px-4 py-2 hover:bg-blue rounded">Offline Admission Form</a></li>
+              <li><a href="/AMEEE" className="block px-4 py-2 hover:bg-blue rounded">AMEEE</a></li>
+              <li><a href="/CampusLife" className="block px-4 py-2 hover:bg-blue rounded">Education Loan</a></li>
             </ul>
           </li>
 
-          <li><a href="#" className="hover:text-orange transition">Gallery</a></li>
-          <li><a href="#" className="hover:text-orange transition">Media</a></li>
-          <li><a href="#" className="hover:text-orange transition">Testimonials</a></li>
-          <li><a href="#" className="hover:text-orange transition">Contact Us</a></li>
+          <li><a href="/Gallery" className="hover:text-orange transition">Gallery</a></li>
+          <li><a href="/Media" className="hover:text-orange transition">Media</a></li>
+          <li><a href="/Testimonials" className="hover:text-orange transition">Testimonials</a></li>
+          <li><a href="/ContactUs" className="hover:text-orange transition">Contact Us</a></li>
 
           <li>
             <a

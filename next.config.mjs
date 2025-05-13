@@ -8,7 +8,7 @@ const nextConfig = {
   },
   trailingSlash: true, // This generates folders with index.html inside them
   experimental: {
-    appDir: true,
+  
   },
 };
 

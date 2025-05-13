@@ -32,14 +32,13 @@ const Card = () => {
   ];
 
   return (
-    <div className="flex justify-center items-start bg-white text-white py-20 gap-10">
-      
+    <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start bg-white text-white py-12 px-4 gap-10">
       {/* Left Section (4 cards) */}
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-3xl">
         {cardData.slice(0, 4).map((item, index) => (
           <div
             key={index}
-            className="relative group w-78 h-60 md:w-86 md:h-40 p-[2px] rounded-full overflow-hidden"
+            className="relative group w-full p-[2px] rounded-full overflow-hidden"
           >
             {/* Dotted Border */}
             <div className="absolute inset-0 rounded-full border-2 border-dotted border-gray-500 z-10"></div>
@@ -53,18 +52,18 @@ const Card = () => {
 
             {/* Inner Card Content */}
             <div className="relative z-30 bg-white text-black rounded-full flex flex-col md:flex-row items-center gap-4 w-full h-full p-4">
-              <div className="w-70 h-32 bg-black rounded-full overflow-hidden">
+              <div className="w-32 h-32 bg-black rounded-full overflow-hidden">
                 <img
                   src={item.image}
                   alt={item.title}
                   className="w-full h-full object-cover rounded-full"
                 />
               </div>
-              <div className="flex flex-col items-center md:items-start">
-                <h3 className="font-bold text-sm md:text-base text-center md:text-left ">
+              <div className="flex flex-col items-center md:items-start text-center md:text-left">
+                <h3 className="font-bold text-sm md:text-base">
                   {item.title}
                 </h3>
-                <button className="mt-2 px-4 py-1 text-xs border-2 border-dotted border-gray-500 rounded-full m-2 p-4">
+                <button className="mt-2 px-4 py-1 text-xs border-2 border-dotted border-gray-500 rounded-full">
                   {item.code}
                 </button>
               </div>
@@ -74,8 +73,8 @@ const Card = () => {
       </div>
 
       {/* Right Section (Vertical Special Card) */}
-      <div className="flex flex-col">
-        <div className="relative group w-40 h-[350px] p-[2px] rounded-full overflow-hidden">
+      <div className="flex justify-center lg:justify-start">
+        <div className="relative group w-56 sm:w-72 h-[360px] p-[2px] rounded-full overflow-hidden">
           {/* Dotted Border */}
           <div className="absolute inset-0 rounded-full border-2 border-dotted border-gray-500 z-10"></div>
 
@@ -95,7 +94,7 @@ const Card = () => {
                 className="w-full h-full object-cover rounded-full"
               />
             </div>
-            <h3 className="font-bold text-base text-center">
+            <h3 className="font-bold text-base text-center px-2">
               {cardData[4].title}
             </h3>
             <button className="px-4 py-1 text-xs border-2 border-dotted border-gray-500 rounded-full mb-6">
@@ -115,11 +114,10 @@ const Card = () => {
           }
         }
         .animate-moveTrail {
-          animation: moveTrail 40s linear infinite;  /* Continuous slower rotation */
+          animation: moveTrail 40s linear infinite;
           transform-origin: center center;
         }
       `}</style>
-
     </div>
   );
 };

@@ -6,30 +6,31 @@ export function TimelineDemo() {
   const data = [
     {
       title: "Through AMEEE EXAM",
-      content: (
-        <div>
-          <p className="mb-8 text-lg font-normal text-neutral-800 md:text-xl dark:text-neutral-200">
-            Registration Process:
-            <br />
-            ✅ Visit AMEEE official website or scan QR<br />
-            ✅ Click on “AMEEE 2024” Apply now<br />
-            ✅Complete the AMEEE 2024 Registration Process.
-            {/* ✔ Complete the AMEEE 2024 Registration Process. */}
-          </p>
-          <div className="grid grid-cols-2 gap-4">
-            {["/tp1.png", "/tp2.png"].map((img, i) => (
-              <img
-                key={i}
-                src={`${img}`}
-                alt={`AMEEE step ${i + 1}`}
-                width={500}
-                height={500}
-                className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-              />
-            ))}
-          </div>
-        </div>
-      ),
+content: (
+  <div>
+    <p className="mb-8 text-lg font-normal text-neutral-800 md:text-xl dark:text-neutral-200">
+      Registration Process:
+      <br />
+      ✅ Visit AMEEE official website or scan QR<br />
+      ✅ Click on “AMEEE 2024” Apply now<br />
+      ✅ Complete the AMEEE 2024 Registration Process.
+    </p>
+    <div className="grid grid-cols-2 gap-4">
+      {["/tp1.png", "/tp2.png"].map((img, i) => (
+        <img
+          key={i}
+          src={`${img}`}
+          alt={`AMEEE step ${i + 1}`}
+          width={500}
+          height={500}
+          className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+        />
+      ))}
+    </div>
+   
+  </div>
+)
+
     },
     {
       title: "Direct Admission",
@@ -67,6 +68,22 @@ export function TimelineDemo() {
               />
             ))}
           </div>
+           <div className="mt-6 flex gap-4">
+      <a
+        href="/sample1.pdf"
+        download
+        className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+      >
+        Download Medical Form
+      </a>
+      <a
+        href="/sample2.pdf"
+        download
+        className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition"
+      >
+        Download Admission Form
+      </a>
+    </div>
         </div>
       ),
     },

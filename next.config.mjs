@@ -6,7 +6,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  trailingSlash: true, // This generates folders with index.html inside them
+  trailingSlash: true,
   experimental: {
   
   },

@@ -76,7 +76,7 @@ export default function Header() {
               <li><a href="/CampusLife" className="block px-4 py-2 hover:bg-blue rounded">Admission</a></li>
               <li><a href="/CampusLife/eligibility" className="block px-4 py-2 hover:bg-blue rounded">Eligibility</a></li>
               <li><a href="/CampusLife/whychoose" className="block px-4 py-2 hover:bg-blue rounded">Why Choose IIAG</a></li>
-              {/* <li><a href="/CampusLife" className="block px-4 py-2 hover:bg-blue rounded">Download Medical Certificate</a></li> */}
+              <li><a href="/certificate" className="block px-4 py-2 hover:bg-blue rounded">Download Medical Certificate</a></li>
               <li><a href="/CampusLife" className="block px-4 py-2 hover:bg-blue rounded">Offline Admission Form</a></li>
               <li><a href="/AMEEE" className="block px-4 py-2 hover:bg-blue rounded">AMEEE</a></li>
               <li><a href="/CampusLife" className="block px-4 py-2 hover:bg-blue rounded">Education Loan</a></li>

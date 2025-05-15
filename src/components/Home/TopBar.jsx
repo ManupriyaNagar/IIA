@@ -19,8 +19,8 @@ export default function TopBar() {
             className="h-18 md:h-28 object-contain cursor-pointer"
           />
           </Link>
-          <div className="text-center md:text-left">
-            <h1 className="text-lg md:text-2xl font-extrabold text-blue uppercase leading-tight">
+          <div className="text-center md:text-left hidden md:block">
+            <h1 className="text-lg md:text-2xl font-extrabold text-blue uppercase  leading-tight">
               Indraprasth Institute of Aeronautics
             </h1>
             <h3 className="text-xs md:text-sm font-semibold text-blue uppercase mt-1">
@@ -32,7 +32,7 @@ export default function TopBar() {
         </div>
 
         {/* Right: Contact Info in a single line */}
-        <div className='bg-gradient-to-r from-orange to-pink rounded-l-full p-9'>
+        <div className='bg-gradient-to-r from-orange to-pink rounded-l-full md:p-9 p-3'>
         <div className="flex flex-col items-left text-sm text-white">
           
           
@@ -47,7 +47,7 @@ export default function TopBar() {
 
             <div className="text-left">
               {/* <div className="font-semibold">Support & Helpdesk</div> */}
-              <div className="text-xs">18003090503 / +91-9212170033/22
+              <div className="text-xs md:text-sm">18003090503 / +91-9212170033/22
               </div>
             </div>
           </a>

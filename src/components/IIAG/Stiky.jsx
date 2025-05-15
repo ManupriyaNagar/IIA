@@ -79,30 +79,30 @@ export const StickyScrollRevealDemo = () => {
         />
       ),
     },
-    {
-      title: "Director's Message",
-      description:
-        "At IIA, we are committed to providing a world-class education. Our programs are designed to equip students with the skills and knowledge needed to excel in the aviation industry. We believe in a holistic approach to education, combining theoretical knowledge with practical experience. Our faculty members are industry experts who bring real-world insights into the classroom. We are proud of our state-of-the-art facilities and our partnerships with leading aviation organizations. Join us at IIA, where your journey towards a successful aviation career begins.",
-      content: (
-        <img
-          src="/AMEEEAA.png"
-          alt="Real time changes"
-          className="h-full w-full object-cover"
-        />
-      ),
-    },
-    {
-      title: "Version control",
-      description:
-        "At IIA, we take great pride in offering top-notch education...",
-      content: (
-        <img
-          src="/AMEEEA.png"
-          alt="Version control"
-          className="h-full w-full object-cover"
-        />
-      ),
-    },
+    // {
+    //   title: "Director's Message",
+    //   description:
+    //     "At IIA, we are committed to providing a world-class education. Our programs are designed to equip students with the skills and knowledge needed to excel in the aviation industry. We believe in a holistic approach to education, combining theoretical knowledge with practical experience. Our faculty members are industry experts who bring real-world insights into the classroom. We are proud of our state-of-the-art facilities and our partnerships with leading aviation organizations. Join us at IIA, where your journey towards a successful aviation career begins.",
+    //   content: (
+    //     <img
+    //       src="/AMEEEAA.png"
+    //       alt="Real time changes"
+    //       className="h-full w-full object-cover"
+    //     />
+    //   ),
+    // },
+    // {
+    //   title: "Version control",
+    //   description:
+    //     "At IIA, we take great pride in offering top-notch education...",
+    //   content: (
+    //     <img
+    //       src="/AMEEEA.png"
+    //       alt="Version control"
+    //       className="h-full w-full object-cover"
+    //     />
+    //   ),
+    // },
 
   ];
 

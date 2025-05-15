@@ -12,8 +12,8 @@ const Page = () => {
         
           <TextGenerateEffect/> 
           {/* <TypewriterEffectSmooth/> */}
-          <TypewriterEffectSmoothDemo/>
-          <StickyScrollRevealDemo/>
+          {/* <TypewriterEffectSmoothDemo/> */}
+          {/* <StickyScrollRevealDemo/> */}
           {/* <ImageTextScroll/> */}
         </div>
     );

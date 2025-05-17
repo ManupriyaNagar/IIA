@@ -1,6 +1,6 @@
 "use client";
 import { AnimatedTestimonialsDemo } from "@/components/Testimonials/Animated";
-import { GlowingEffectDemo } from "@/components/Testimonials/NextSection";
+
 import VideoTestimonials from "@/components/Testimonials/VideoSection";
 import { VideoOffIcon } from "lucide-react";
 import React from "react";
@@ -11,8 +11,7 @@ export default function page() {
    <div>
      <VideoTestimonials/>
    <AnimatedTestimonialsDemo/>
-   <GlowingEffectDemo/>
-  
+
    </div>
   );
 }

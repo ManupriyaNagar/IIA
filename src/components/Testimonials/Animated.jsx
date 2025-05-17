@@ -27,20 +27,7 @@ export function AnimatedTestimonialsDemo() {
       designation: "Operations Director at CloudScale",
       src: "/t3.jpg",
     },
-    {
-      quote:
-        "No 1 AME college. Major feature are discipline, study , result oriented and mostly placement.Nice faculty. Great support for clear modules exam. when we talk for quality and job . Indraprasth Institute Of Aeronautics is best for everything.",
-      name: "Viplav Kumar",
-      designation: "Engineering Lead at DataPro",
-      src: "/t4.jpg",
-    },
-    {
-      quote:
-        "If you want to become an Aircraft Maintenance Engineer, IIAG is the perfect place for you. This college has given me a lot of confidence, a lot of friends and a lot of good memories. The faculty, the management, the infrastructure everything is commendable.",
-      name: "Lakshmi Narayan",
-      designation: "VP of Technology at FutureNet",
-      src: "/t5.jpg",
-    },
+    
   ];
 
   return <AnimatedTestimonials testimonials={testimonials} autoplay />;

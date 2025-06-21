@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <head>
   <meta charSet="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/5.png" />
+  <link rel="icon" href="/thumbnail2.png" className="h-auto w-full rounded-full"/>
   <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
